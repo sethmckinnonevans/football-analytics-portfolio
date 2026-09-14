@@ -2,42 +2,42 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-[#404040] tracking-wide leading-tight text-white px-12 py-2">
+    <main className="bg-gradient-to-b from-[#7678A8] via-[#40425C] to-[#272833] min-h-screen tracking-wide leading-tight px-12 py-2">
         
         {/* Navigation */}
-        <nav className="sticky top-0 z-50 mb-10 flex items-center justify-between bg-[#303030] py-6 border-b border-white/30">
+        <nav className="sticky top-0 z-50 backdrop-blur-xl flex items-center mb-10 py-6 justify-between border-b border-white/50">
             <Link 
-                href="/" 
-                className="transition duration-200 text-xl font-bold hover:scale-110 hover:text-white"
+            href="/" 
+            className="transition duration-200 text-lg md:text-xl font-bold hover:scale-110 hover:text-gray-300"
             >
             Home
             </Link>
 
-            <div className="flex gap-8 text-sm text-gray-400">
+            <div className="flex gap-8 text-xs text-white md:text-sm">
                 <Link 
-                    href="/about" 
-                    className="transition duration-200 hover:scale-110 hover:text-white"
+                href="/about" 
+                className="transition duration-200 hover:scale-110 hover:text-gray-300"
                 >
                     About
                 </Link>
 
                 <Link 
-                    href="/projects" 
-                    className="transition duration-200 hover:scale-110 hover:text-white"
+                href="/projects" 
+                className="transition duration-200 hover:scale-110 hover:text-gray-300"
                 >
                     Projects
                 </Link>
 
                 <Link 
-                    href="/match-reports" 
-                    className="transition duration-200 hover:scale-110 hover:text-white"
+                href="/match-reports" 
+                className="transition duration-200 hover:scale-110 hover:text-gray-300"
                 >
                     Match Reports
                 </Link>
 
                 <Link 
-                    href="/contact" 
-                    className="transition duration-200 hover:scale-110 hover:text-white"
+                href="/contact" 
+                className="transition duration-200 hover:scale-110 hover:text-gray-300"
                 >
                     Contact
                 </Link>
@@ -50,7 +50,7 @@ export default function About() {
                 The Identification of Distinct Midfielder Archetypes in Modern Football
             </h1>
 
-            <p className="mb-5 text-md font-medium tracking-[0.25em] text-gray-500">
+            <p className="mb-5 text-md font-medium tracking-[0.25em] text-gray-400">
                 UNSUPERVISED LEARNING · PLAYER PROFILING
             </p>
 

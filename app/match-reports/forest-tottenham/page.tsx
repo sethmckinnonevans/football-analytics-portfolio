@@ -2,82 +2,82 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-[#404040] tracking-wide leading-tight text-white px-12 py-2">
+    <main className="bg-gradient-to-b from-[#7678A8] via-[#40425C] to-[#272833] min-h-screen tracking-wide leading-tight px-12 py-2">
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 mb-10 flex items-center justify-between bg-[#303030] py-6 border-b border-white/30">
-        <Link 
+      <nav className="sticky top-0 z-50 backdrop-blur-xl flex items-center mb-10 py-6 justify-between border-b border-white/50">
+          <Link 
           href="/" 
-          className="transition duration-200 text-xl font-bold hover:scale-110 hover:text-white"
+          className="transition duration-200 text-lg md:text-xl font-bold hover:scale-110 hover:text-gray-300"
           >
           Home
-        </Link>
+          </Link>
 
-          <div className="flex gap-8 text-sm text-gray-400">
-            <Link 
+          <div className="flex gap-8 text-xs text-white md:text-sm">
+              <Link 
               href="/about" 
-              className="transition duration-200 hover:scale-110 hover:text-white"
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
               >
-                About
-            </Link>
+                  About
+              </Link>
 
-            <Link 
+              <Link 
               href="/projects" 
-              className="transition duration-200 hover:scale-110 hover:text-white"
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
               >
-                Projects
-            </Link>
+                  Projects
+              </Link>
 
-            <Link 
+              <Link 
               href="/match-reports" 
-              className="transition duration-200 hover:scale-110 hover:text-white"
-            >
-              Match Reports
-            </Link>
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
+              >
+                  Match Reports
+              </Link>
 
-            <Link 
+              <Link 
               href="/contact" 
-              className="transition duration-200 hover:scale-110 hover:text-white"
-            >
-              Contact
-            </Link>
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
+              >
+                  Contact
+              </Link>
           </div>
       </nav>
 
       {/* Title*/}
       <section className="mb-12 mx-auto max-w-6xl">
-        <h1 className="mb-3 text-4xl font-bold tracking-tight md:text-6xl">
+        
+        <h1 className="mb-2 text-4xl font-bold tracking-tight md:text-6xl">
           Nottingham Forest 0-0 Tottenham Hotspur
         </h1>
 
-        <p className="mb-4 text-md font-medium tracking-[0.25em] text-gray-500">
+        <p className="mb-4 text-sm font-medium tracking-[0.25em] text-gray-400 md:text-md">
           PREMIER LEAGUE | GW3 | 05.09.2026
         </p>
 
       </section>
 
-      {/* Average Positions*/}
+      {/* Average Positions */}
       <section className="mb-8 mx-auto max-w-6xl">
+        <div className="grid gap-4 md:grid-cols-2">
 
-         <div className="grid gap-8 md:grid-cols-2">
-            <div>
-              <img
-                src="/plots/match-reports/forest-spurs/Nottingham Forest_average_positions.png"
-                alt="Nottingham Forest average player positions"
-                className="w-full rounded-xl"
-              />
-            </div>
-
-            <div>
-              <img
-              src="/plots/match-reports/forest-spurs/Tottenham Hotspur_average_positions.png"
-              alt="Nottingham Forest average player positions"
-              className="w-full rounded-xl justify-end"
+          <div>
+            <iframe
+              src="/plots/match-reports/forest-spurs/Nottingham Forest_average_positions.html"
+              title="Nottingham Forest average positions"
+              className="h-[380px] w-full border-0"
             />
+          </div>
 
-            </div>
+          <div>
+            <iframe
+              src="/plots/match-reports/forest-spurs/Tottenham Hotspur_average_positions.html"
+              title="Tottenham Hotspur average player positions"
+              className="h-[380px] w-full rounded-xl border-0"
+            />
+          </div>
 
-         </div>
+        </div>
       </section>
 
       {/* Momentum and xG*/}
@@ -89,7 +89,7 @@ export default function About() {
             <img
               src="/plots/match-reports/forest-spurs/momentum_graph.png"
               alt="Match momentum graph"
-              className="w-full rounded-xl]"
+              className="w-full rounded-xl"
             />
           </div>
 
@@ -120,11 +120,12 @@ export default function About() {
 
       {/* Overview */}
       <section className="mb-12 mx-auto max-w-6xl">
-        <h2 className="mb-6 text-3xl font-bold">
+        
+        <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           Overview
         </h2>
         
-        <p className="mb-4 text-lg">
+        <p className="mb-4 text-md md:text-lg">
           Spurs gained their first point of the season in a rather uneventful game at the City Ground. It was a well
           structured, disciplined defensive performance, limiting Forest to just 0.75 open play xG and registering 
           a first clean sheet of the season. However, the attacking woes continued, relying heavily on set-pieces
@@ -138,19 +139,19 @@ export default function About() {
 
       {/* Out of Possession*/}
       <section className="mb-12 mx-auto max-w-6xl">
-        <h2 className="mb-6 text-3xl font-bold">
+        <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           Out of Possession
         </h2>
         
-        <div className="grid gap-6 md:grid-cols-1">
+        <div className="grid mb-6 gap-6 md:grid-cols-1 w-full mx-auto md:max-w-4xl">
           <div>
               <img
                   src="/plots/match-reports/forest-spurs/press-1.JPG"
                   alt="Pressing Sequence 1"
-                  className="w-full rounded-xl"
+                  className="rounded-xl"
                 />
 
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-xs text-gray-400 md:text-sm">
               Image 1: Spurs Pressing Sequence - 4-2-4 mid block.
             </p>
           </div>
@@ -159,17 +160,17 @@ export default function About() {
               <img
                 src="/plots/match-reports/forest-spurs/press-2.JPG"
                 alt="Pressing Sequence 2"
-                className="w-full rounded-xl"
+                className="rounded-xl"
               />
 
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-xs text-gray-400 md:text-sm">
               Image 2: Spurs Pressing Sequence - initiated when the ball goes to the wide centre-backs.
             </p>
 
           </div>
         </div>
 
-        <p className="mb-8 mt-6 text-lg">
+        <p className="mb-4 text-md md:text-lg">
           The general approach out of possession was a well structured 4-2-4 mid block which stifled Forest's 
           build-up and limited them to few good chances. As seen in Image 1, Conor Gallagher pushes up to create
           a front four when the Forest centre-backs began their build-up. When the central centre-back, Milenkovic, 
@@ -181,15 +182,15 @@ export default function About() {
           able to deal with him competently, recovering the ball.
         </p>
 
-        <div className="grid gap-6 md:grid-cols-1">
+        <div className="grid mb-6 gap-6 md:grid-cols-1 w-full mx-auto md:max-w-4xl">
           <div>
               <img
                   src="/plots/match-reports/forest-spurs/goal-1.JPG"
                   alt="Pressing Sequence 1"
-                  className="w-full rounded-xl"
+                  className="rounded-xl"
                 />
 
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-xs text-gray-400 md:text-sm">
               Image 3: Goal Sequence - Spurs 4-2-4 mid block with Delap dropping deep
             </p>
           </div>
@@ -198,17 +199,17 @@ export default function About() {
               <img
                 src="/plots/match-reports/forest-spurs/goal-2.JPG"
                 alt="Pressing Sequence 2"
-                className="w-full rounded-xl"
+                className="rounded-xl"
               />
 
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-xs text-gray-400 md:text-sm">
               Image 4: Goal Sequence - McAtee recieves the ball between the lines and find Gibbs-White
             </p>
 
           </div>
         </div>
 
-        <p className="mb-8 mt-6 text-lg">
+        <p className="mb-4 text-md md:text-lg">
           The one instance where Forest were able to break down the Spurs block actually resulted with them 
           putting the ball in the back of the net. Again in Image 3, we see Spurs set up in a 4-2-4 mid-block,
           allowing Milenkovic time on the ball. Liam Delap then drops deep between Bentancur and Tonali to recieve
@@ -218,7 +219,7 @@ export default function About() {
           scramble later and the ball was in the Spurs net, only to be ruled out for a Neco Williams hand ball, a let off.
         </p>
 
-        <p className="mb-8 mt-6 text-lg">
+        <p className="mb-4 text-md md:text-lg">
           Since this remained the only instance where Forest played straight through the Spurs block, with the majority
           of the Forest chances coming in transition but only accumalating 0.75 open play xG, I think it was an encouraging
           defensive performance from Spurs.
@@ -229,25 +230,25 @@ export default function About() {
 
       {/* In Possession*/}
       <section className="mb-12 mx-auto max-w-6xl">
-        <h2 className="mb-6 text-3xl font-bold">
+        <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           In Possession
         </h2>
 
-        <div className="grid gap-6 md:grid-cols-1">
+        <div className="grid mb-6 gap-6 md:grid-cols-1 w-full mx-auto md:max-w-4xl">
             <div>
               <img
                 src="/plots/match-reports/forest-spurs/build-up.JPG"
                 alt="Pressing Sequence 1"
-                className="w-full rounded-xl"
+                className="rounded-xl"
               />
 
-              <p className="mt-2 text-sm text-gray-400">
+              <p className="mt-2 text-xs text-gray-400 md:text-sm">
                 Image 5: Spurs Build-Up - 4-1-2-3 with Forest in a 5-4-1 block.
               </p>
           </div>
         </div>
 
-        <p className="mb-6 mt-6 text-lg">
+        <p className="mb-4 text-md md:text-lg">
           In possession Spurs set up in a 4-1-2-3 shape with the aim of getting the two number 10s on the ball in the left and right half spaces. 
           But Forest's compact 5-4-1 block limited the opportunities for Spurs to get players on the ball in these dangerous areas. Spurs' 
           front five was very wide, looking to strecth the Forest back five, who went man-for-man with the wingbacks marking Tel and Savio, 
@@ -260,21 +261,21 @@ export default function About() {
           were easily able to knock him off the ball, demonstrating his inaptitude to play as a solo striker in this system. 
         </p>
 
-        <div className="grid gap-6 md:grid-cols-1">
+        <div className="grid mb-6 gap-6 md:grid-cols-1 w-full mx-auto md:max-w-4xl">
             <div>
               <img
                 src="/plots/match-reports/forest-spurs/rotations.JPG"
                 alt="Pressing Sequence 1"
-                className="w-full rounded-xl"
+                className="rounded-xl"
               />
 
-              <p className="mt-2 text-sm text-gray-400">
+              <p className="mt-2 text-xs text-gray-400 md:text-sm">
                 Image 6: Spurs Rotations - Pedro Porro taking up the right half space while Conor Gallagher covers at right back.
               </p>
           </div>
         </div>
 
-        <p className="mb-6 mt-6 text-lg">
+        <p className="mb-4 text-md md:text-lg">
           The rotations in wide areas were interesting to watch and clearly something De Zerbi has worked on but were ultimately ineffective.
           he Tel-Tonali-Udogie and Savio-Gallagher-Porro wide rotations were an attempt to get players on the ball in the half spaces. In Image 6
           we see Pedro Porro moving forwards to occupy the right half space while Conor Gallagher drops in to right back to offer a passing option.
@@ -289,12 +290,12 @@ export default function About() {
       
       {/* Analysis*/}
       <section className="mb-12 mx-auto max-w-6xl">
-        <h2 className="mb-6 text-3xl font-bold">
+        <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           Analysis
         </h2>
 
-      <p className="mb-4 text-lg">
-        The first noteable thing from watching the game was that Spurs struggled to progress the ball through central areas
+      <p className="mb-4 text-md md:text-lg">
+        The first noteable detail from watching the game was that Spurs struggled to progress the ball through central areas
         and the Spurs average positions figure highlights this with just a 19.1% usage of the central attacking zone.  This 
         is largely credit to Forest's out of possession system, forcing Spurs into wide areas, but also a limitation of playing 
         Omar Marmoush as a solo striker. From his heatmap we can see he naturally floats to the left hand side and the ocasions 
@@ -305,15 +306,15 @@ export default function About() {
         also getting more out of Marmoush.
       </p>
 
-      <div className="mx-auto max-w-4xl"> 
+      <div className="mb-6 mx-auto w-full md:max-w-4xl"> 
         <img
           src="/plots/match-reports/forest-spurs/marmoush_heatmap.png"
           alt="Pressing Sequence 1"
-          className="w-full rounded-xl"
+          className="rounded-xl"
         />
       </div>
 
-      <p className="mb-4 mt-6 text-lg">
+      <p className="mb-4 text-md md:text-lg">
         Another observation from the average positions figure is the focus of paly down each wing but with only 0.35xG generate from open play. 
         Again credit has to be given to Forest's back five for their competence in defending wide areas, with the 10s of Gibbs-White and Ndoye 
         working hard off the ball to double up on the Spurs wingers when they recieved the ball out wide. However, the overall lack of quality 
@@ -323,7 +324,7 @@ export default function About() {
         Kudus was largely ineffective just 1 out of 2 dribbles completed.
       </p>
 
-      <p className="mb-6 text-lg">
+      <p className="mb-4 text-md md:text-lg">
         Once again if we look at the crossing statistics from the Spurs it paints a picture of a poor performance or maybe system. 
         The spurs wide players accounted for 21 of the teams 24 cross completing just 6 of them, a success rate of 29%.
         Now the finger can be pointed at a lack of quality from the players, most notably Kudus' dismal cross in the dying minutes, 
@@ -334,11 +335,11 @@ export default function About() {
         reminicent of the time under Thomas Frank. 
       </p>
 
-      <div className="mx-auto max-w-4xl"> 
+      <div className="mx-auto w-full md:max-w-4xl"> 
         <img
           src="/plots/match-reports/forest-spurs/wide_areas.png"
           alt="Pressing Sequence 1"
-          className="w-full rounded-xl"
+          className="rounded-xl"
         />
       </div>
 
@@ -348,11 +349,11 @@ export default function About() {
 
       {/* Final Thoughts*/}
       <section className="mb-12 mx-auto max-w-6xl">
-         <h2 className="mb-6 text-3xl font-bold">
+         <h2 className="mb-6 text-2xl font-bold md:text-4xl">
           Final Thoughts
         </h2>
 
-        <p className="bm-6 text-lg">
+        <p className="bm-6 text-md md:text-lg">
           While Spurs do walk away from the match with their first point of the season, a growing sense of frustration within the fans will remain, having
           yet to score a goal after three league games and in all honesty not coming close to doing so. The out of possession sytem was impressive, 
           limiting forest to minimal chances and giving Spurs their first clean sheet of the season. But the stodgy performance in possession will leave fans demanding more. 
@@ -361,18 +362,16 @@ export default function About() {
         </p>
       </section>
 
-       <div className="mb-12 border-t border-white/20"></div>
+       <div className="mb-12 border-t border-white/30"></div>
 
       <div className="mb-12 flex gap-6 justify-center">
-            <Link
-                href="/match-reports"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-lg border border-white/20 px-6 py-3 transition duration-200 hover:border-white hover:bg-white/10 hover:scale-110"
-            >
-                Read More Match Reports
-            </Link>
-        </div>    
+          <Link
+              href="/match-reports"
+              className="rounded-xl bg-[#3C3D5C] border border-gray-500 p-6 transition duration-200 hover:border-white hover:scale-110"
+          >
+              Read More Match Reports
+          </Link>
+      </div>    
     </main>
   );
 }
