@@ -66,7 +66,7 @@ export default function MatchReports() {
                         <iframe
                         src="/plots/match-reports/spurs-everton/Tottenham Hotspur_average_positions.html"
                         title="Spurs average positions"
-                        className="h-[380px] w-full border-0"
+                        className="h-[380px] w-full rounded-xl border-0"
                         />
                     </div>
 
@@ -107,16 +107,26 @@ export default function MatchReports() {
             </section>
 
             {/* Shot Maps*/}
-            <section className="mb-8 mx-auto max-w-6xl">  
-                
-                <div className="grid gap-8 md:grid-cols-1">
-                    <img
-                        src="/plots/match-reports/spurs-everton/shot_map.png"
-                        alt="Tottenham shot map"
-                        className="w-full rounded-xl"
-                    />
-                </div>
+            <section className="mb-8 mx-auto max-w-6xl">
+                <div className="grid gap-4 md:grid-cols-2">
 
+                    <div>
+                        <iframe
+                        src="/plots/match-reports/spurs-everton/Tottenham Hotspur_shot_map.html"
+                        title="Spurs shot map"
+                        className="h-[380px] w-full"
+                        />
+                    </div>
+
+                    <div>
+                        <iframe
+                        src="/plots/match-reports/spurs-everton/Everton_shot_map.html"
+                        title="Everton shot map"
+                        className="h-[380px] w-full"
+                        />
+                    </div>
+
+                </div>
             </section>
 
             {/* Overview */}

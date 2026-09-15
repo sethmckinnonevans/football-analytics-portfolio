@@ -106,16 +106,26 @@ export default function About() {
       </section>
 
       {/* Shot Maps*/}
-      <section className="mb-8 mx-auto max-w-6xl">  
-        
-        <div className="grid gap-8 md:grid-cols-1">
-          <img
-            src="/plots/match-reports/forest-spurs/shot_map.png"
-            alt="Tottenham shot map"
-            className="w-full rounded-xl"
-          />
-        </div>
+      <section className="mb-8 mx-auto max-w-6xl">
+        <div className="grid gap-4 md:grid-cols-2">
 
+          <div>
+            <iframe
+              src="/plots/match-reports/forest-spurs/Nottingham Forest_shot_map.html"
+              title="Nottingham Forest average positions"
+              className="h-[380px] w-full"
+            />
+          </div>
+
+          <div>
+            <iframe
+              src="/plots/match-reports/forest-spurs/Tottenham Hotspur_shot_map.html"
+              title="Tottenham Hotspur average player positions"
+              className="h-[380px] w-full"
+            />
+          </div>
+
+        </div>
       </section>
 
       {/* Overview */}

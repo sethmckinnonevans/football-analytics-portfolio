@@ -7,7 +7,7 @@ export default function Home() {
 
       {/* Navigation */}
       <nav className="flex items-center justify-between py-6 border-b border-white/50">
-        <h2 className="text-md font-bold md:text-xl">
+        <h2 className="text-xs font-bold md:text-xl">
           Seth McKinnon-Evans
         </h2>
 
