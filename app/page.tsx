@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -6,66 +7,66 @@ export default function Home() {
 
 
       {/* Navigation */}
-      <nav className="flex items-center justify-between py-6 border-b border-white/50">
-        <h2 className="text-xs font-bold md:text-xl">
+      <nav className="flex items-center mb-10 py-6 justify-between border-b border-white/50">
+        <h2 className="text-[8px] font-bold md:text-xl whitespace-nowrap">
           Seth McKinnon-Evans
         </h2>
 
-        <div className="flex gap-4 text-xs text-white md:text-sm md:gap-8">
-          <Link 
-          href="/about" 
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-          >
-            About
-          </Link>
+        <div className="flex gap-2 md:gap-8 text-[10px] text-white md:text-sm">
+            <Link 
+              href="/about" 
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
+            >
+              About
+            </Link>
 
-          <Link 
-          href="/projects" 
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-          >
-            Projects
-          </Link>
+            <Link 
+              href="/projects" 
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
+            >
+              Projects
+            </Link>
 
-          <Link 
-          href="/match-reports" 
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-          >
-            Match Reports
-          </Link>
+            <Link 
+              href="/match-reports" 
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
+            >
+              Match Reports
+            </Link>
 
-          <Link 
-          href="/contact" 
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-          >
-            Contact
-          </Link>
-        </div>
+            <Link 
+              href="/contact" 
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
+            >
+              Contact
+            </Link>
+          </div>
       </nav>
-
 
       {/* Hero */}
       <section className="flex min-h-[25vh] md:min-h-[50vh] flex-col justify-center items-center mx-auto">
 
-        <h1 className="mb-2 max-w-4xl text-5xl font-bold tracking-tight md:text-8xl">
-          EXPECTED xG
-        </h1>
+        <img
+          src="/logo/exxg-full-nobg.png"
+          alt="logo"
+          className="w-max h-auto mb-2 md:mb-4"
+        />
 
-        <p className="mb-8 text-[10px] font-medium tracking-[0.3em] text-gray-400 md:text-sm">
+        <p className="mb-4 md:mb-8 text-[10px] text-center font-medium tracking-[0.3em] text-gray-400 md:text-sm">
           DATA SCIENCE · ANALYTICS · MACHINE LEARNING
         </p>
 
-        <p className="max-w-xl text-center text-md leading-normal tracking-normal text-gray-400 md:text-xl">
+        <p className="max-w-xl text-center text-sm leading-normal tracking-normal text-gray-400 md:text-xl">
           Exploring the questions behind football through data, statistical analysis, machine learning and tactical insight.
         </p>
 
       </section>
 
-
       {/* Projects */}
       <section id="projects" className="px-12">
 
 
-        <h2 className="mb-8 text-2xl font-bold md:text-4xl">
+        <h2 className="mb-4 md:mb-8 text-2xl font-bold md:text-4xl">
           Featured Projects
         </h2>
 
@@ -73,7 +74,7 @@ export default function Home() {
 
           <Link
             href="/projects/world-cup-predictor"
-            className="group rounded-xl border border-white/30 p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            className="group rounded-xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
           >
           
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
@@ -93,7 +94,7 @@ export default function Home() {
 
           <Link
             href="/projects/premier-league-usage"
-            className="group rounded-xl border border-white/30 p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            className="group rounded-xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
           >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
               Premier League Player Usage Rates
@@ -112,7 +113,7 @@ export default function Home() {
   
           <Link
             href="/projects/midfielder-archetypes"
-            className="group rounded-2xl border border-white/30 p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            className="group rounded-2xl border border-white/30 p-4 md:p-8transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
           >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
               Midfielder Archetypes
@@ -130,7 +131,7 @@ export default function Home() {
 
           <Link
             href="/projects/match-report-generator"
-            className="group rounded-2xl border border-white/30 p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            className="group rounded-2xl border border-white/30 p-4 md:p-8transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
           >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
               Match Report Generator
@@ -153,14 +154,14 @@ export default function Home() {
       {/* Match Reports */}
       <section id="match-reports" className="px-12 py-10">
 
-        <h2 className="mb-8 text-2xl font-bold md:text-4xl">
+        <h2 className="mb-4 md:mb-8 text-2xl font-bold md:text-4xl">
           Latest Match Report 
         </h2>
 
         <div className = "space-y-4">
           <Link
             href="/match-reports/tottenham-everton"
-            className="group block rounded-2xl border border-white/30 p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
+            className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
@@ -181,6 +182,9 @@ export default function Home() {
         </div>
 
       </section>
+      
+      {/* Match Reports */}
+      <Footer />
 
     </main>
   );

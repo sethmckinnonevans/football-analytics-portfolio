@@ -1,49 +1,15 @@
 
 import Link from "next/link";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+
 
 export default function MatchReports() {
   return (
     <main className="bg-gradient-to-b from-[#7678A8] via-[#40425C] to-[#272833] min-h-screen tracking-wide leading-tight px-12 py-2">
 
       {/* Navigation */}
-      <nav className="flex items-center py-6 justify-between border-b border-white/50">
-        <Link 
-          href="/" 
-          className="transition duration-200 text-lg md:text-xl font-bold hover:scale-110 hover:text-gray-300"
-          >
-          Home
-        </Link>
-
-        <div className="flex gap-8 text-xs text-white md:text-sm">
-          <Link 
-          href="/about" 
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-          >
-            About
-          </Link>
-
-          <Link 
-          href="/projects" 
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-          >
-            Projects
-          </Link>
-
-          <Link 
-          href="/match-reports" 
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-          >
-            Match Reports
-          </Link>
-
-          <Link 
-          href="/contact" 
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-          >
-            Contact
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Title */}
       <section className = "mt-6 max-w-6xl mx-auto mb-12">
@@ -67,7 +33,7 @@ export default function MatchReports() {
           {/* Tottenham vs Everton */}
           <Link
             href="/match-reports/tottenham-everton"
-            className="group rounded-xl border border-gray-500 bg-[#3C3D5C] p-6 transition duration-200 hover:border-white hover:scale-105"
+            className="group rounded-xl border border-gray-500 p-6 transition duration-200 hover:border-white hover:bg-white/10 hover:scale-105"
           >
             <h2 className="mb-2 text-xl font-semibold text-white md:text-2xl">
               Tottenham Hotspur 0-0 Everton
@@ -84,7 +50,7 @@ export default function MatchReports() {
           {/* Forest vs Spurs */}
           <Link
             href="/match-reports/forest-tottenham"
-            className="group rounded-xl border border-gray-500 bg-[#3C3D5C] p-6 transition duration-200 hover:border-white hover:scale-105"
+            className="group rounded-xl border border-gray-500 p-6 transition duration-200 hover:border-white hover:bg-white/10 hover:scale-105"
           >
             <h2 className="mb-2 text-xl font-semibold text-white md:text-2xl">
               Nottingham Forest 0-0 Tottenham Hotspur
@@ -100,6 +66,9 @@ export default function MatchReports() {
 
         </div>
       </section>
+
+      {/*Footer*/}
+      <Footer />
 
 
     </main>

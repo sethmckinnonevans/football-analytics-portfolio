@@ -1,50 +1,16 @@
 import Link from "next/link";
 import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
-export default function About() {
+
+export default function MatchReportGenerator() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#7678A8] via-[#40425C] to-[#272833] text-white px-12 py-2">
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 backdrop-blur-xl flex items-center mb-10 py-6 justify-between border-b border-white/50">
-          <Link 
-          href="/" 
-          className="transition duration-200 text-md md:text-xl font-bold hover:scale-110 hover:text-gray-300"
-          >
-          Home
-          </Link>
-
-          <div className="flex gap-2 md:gap-8 text-xs text-white md:text-sm">
-              <Link 
-              href="/about" 
-              className="transition duration-200 hover:scale-110 hover:text-gray-300"
-              >
-                  About
-              </Link>
-
-              <Link 
-              href="/projects" 
-              className="transition duration-200 hover:scale-110 hover:text-gray-300"
-              >
-                  Projects
-              </Link>
-
-              <Link 
-              href="/match-reports" 
-              className="transition duration-200 hover:scale-110 hover:text-gray-300"
-              >
-                  Match Reports
-              </Link>
-
-              <Link 
-              href="/contact" 
-              className="transition duration-200 hover:scale-110 hover:text-gray-300"
-              >
-                  Contact
-              </Link>
-          </div>
-      </nav>
+      <Navbar />
 
       {/* Title and Overview*/}
       <section className = "mt-6 max-w-6xl mx-auto mb-12">
@@ -560,7 +526,7 @@ export default function About() {
                 <div className="grid gap-6 md:gap-10 md:grid-cols-3">
 
                     <Link
-                    href="/projects/world-cup-predictor"
+                    href="/projects/midfielder-archetypes"
                     className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
                     >
                 
@@ -611,6 +577,9 @@ export default function About() {
         </div>
 
       </section>
+
+      {/* Match Reports */}
+      <Footer />
   
     </main>
   );

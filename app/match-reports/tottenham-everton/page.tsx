@@ -1,49 +1,15 @@
 import Link from "next/link";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
-export default function MatchReports() {
+
+export default function SpursEverton() {
     return (
 
         <main className="bg-gradient-to-b from-[#7678A8] via-[#40425C] to-[#272833] min-h-screen tracking-wide leading-tight px-12 py-2">
 
             {/* Navigation */}
-            <nav className="sticky top-0 z-50 backdrop-blur-xl flex items-center mb-10 py-6 justify-between border-b border-white/50">
-                <Link 
-                href="/" 
-                className="transition duration-200 text-lg md:text-xl font-bold hover:scale-110 hover:text-gray-300"
-                >
-                Home
-                </Link>
-
-                <div className="flex gap-8 text-xs text-white md:text-sm">
-                    <Link 
-                    href="/about" 
-                    className="transition duration-200 hover:scale-110 hover:text-gray-300"
-                    >
-                        About
-                    </Link>
-
-                    <Link 
-                    href="/projects" 
-                    className="transition duration-200 hover:scale-110 hover:text-gray-300"
-                    >
-                        Projects
-                    </Link>
-
-                    <Link 
-                    href="/match-reports" 
-                    className="transition duration-200 hover:scale-110 hover:text-gray-300"
-                    >
-                        Match Reports
-                    </Link>
-
-                    <Link 
-                    href="/contact" 
-                    className="transition duration-200 hover:scale-110 hover:text-gray-300"
-                    >
-                        Contact
-                    </Link>
-                </div>
-            </nav>
+            <Navbar />
 
             {/* Title*/}
             <section className="mb-12 mx-auto max-w-6xl">
@@ -372,6 +338,8 @@ export default function MatchReports() {
                     Read More Match Reports
                 </Link>
             </div>  
+
+            <Footer />
         </main>
     
     );
