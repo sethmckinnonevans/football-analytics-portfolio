@@ -18,7 +18,7 @@ export default function MatchReportGenerator() {
           Match Report Generator
         </h1>
 
-        <p className="mb-6 md:text-base text-xs font-medium tracking-[0.25em] text-gray-400">
+        <p className="mb-6 md:text-base text-[10px] font-medium tracking-[0.25em] text-gray-400">
           DATA ANALYSIS · DATA VISUALISATION
         </p>
 
