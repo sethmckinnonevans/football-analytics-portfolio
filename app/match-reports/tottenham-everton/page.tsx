@@ -101,7 +101,7 @@ export default function SpursEverton() {
                 Overview
                 </h2>
                 
-                <p className="mb-4 text-md md:text-lg">
+                <p className="mb-4 text-sm md:text-lg">
                 Despite a promising opening 15 minutes, the wait for a goal continues, as another lackluster attacking 
                 performance now means Spurs have gone the opening four games of a season without scoring for the first 
                 time in their history. Spurs enjoyed 62% of possession, the majority of which felt safe and uninventive,
@@ -328,12 +328,12 @@ export default function SpursEverton() {
 
             </section>
 
-            <div className="mb-12 border-t border-white/40"></div>
+            <div className="mb-8 border-t border-white/40"></div>
 
-            <div className="mb-12 flex gap-6 justify-center">
+            <div className="mb-8 flex gap-6 justify-center">
                 <Link
                     href="/match-reports"
-                    className="rounded-xl bg-[#3C3D5C] border border-gray-500 p-6 transition duration-200 hover:border-white hover:scale-110"
+                    className="rounded-xl bg-[#3C3D5C] md:text-lg text-sm border border-gray-500 p-4 md:p-6 transition duration-200 hover:border-white hover:scale-110"
                 >
                     Read More Match Reports
                 </Link>

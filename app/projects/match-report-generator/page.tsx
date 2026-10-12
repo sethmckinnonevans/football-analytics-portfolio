@@ -545,7 +545,7 @@ export default function MatchReportGenerator() {
                         className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
                     >
                         <h3 className="mb-1 text-lg font-bold md:text-2xl">
-                        Premier League Player Usage
+                        Premier League Usage Rates
                         </h3>
 
                         <p className="mb-3 text-xs tracking-wider text-gray-500 md:text-sm">
@@ -578,7 +578,7 @@ export default function MatchReportGenerator() {
 
       </section>
 
-      {/* Match Reports */}
+      {/* Footer */}
       <Footer />
   
     </main>

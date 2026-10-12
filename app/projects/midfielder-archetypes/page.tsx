@@ -1131,16 +1131,16 @@ export default function MidfielderArchetypes() {
                     <div className="grid gap-10 md:grid-cols-3">
 
                         <Link
-                        href="/projects/world-cup-predictor"
+                        href="/projects/match-report-generator"
                         className="group rounded-2xl border border-white/30 p-8 transition-200 hover:scale-105 hover:border-white hover:bg-white/10"
                         >
                     
                             <h3 className="mb-1 text-2xl font-bold">
-                            2026 World Cup Predictor
+                            Match Report Generator
                             </h3>  
                             
                             <p className="mb-3 text-sm tracking-wide text-gray-500">
-                            MACHINE LEARNING
+                            DATA ANALYSIS
                             </p>
 
                             <p className ="text-gray-400">
@@ -1191,7 +1191,7 @@ export default function MidfielderArchetypes() {
 
     </section>
 
-    {/* Match Reports */}
+    {/* Footer */}
     <Footer />
 
     </main>

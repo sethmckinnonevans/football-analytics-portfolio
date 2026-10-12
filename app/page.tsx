@@ -56,64 +56,58 @@ export default function Home() {
           DATA SCIENCE · ANALYTICS · MACHINE LEARNING
         </p>
 
-        <p className="max-w-xl text-center text-sm leading-normal tracking-normal text-gray-400 md:text-xl">
+        <p className="max-w-xl text-center text-sm leading-normal tracking-normal text-white md:text-xl">
           Exploring the questions behind football through data, statistical analysis, machine learning and tactical insight.
         </p>
 
       </section>
 
       {/* Projects */}
-      <section id="projects" className="px-12">
+      <section className="mb-8 max-w-6xl mx-auto mb-12">
 
 
         <h2 className="mb-4 md:mb-8 text-2xl font-bold md:text-4xl">
           Featured Projects
         </h2>
 
-        <div className = "grid gap-6 md:gap-12 md:grid-cols-2">
-
-          <Link
-            href="/projects/world-cup-predictor"
-            className="group rounded-xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
-          >
-          
-            <h3 className="mb-1 text-lg font-bold md:text-2xl">
-              2026 World Cup Predictor
-            </h3>  
-            
-            <p className="mb-3 text-xs tracking-wide text-gray-500 md:text-sm">
-              MACHINE LEARNING
-            </p>
-
-            <p className ="text-sm text-gray-400 md:text-base">
-              An evaluation of various machine learning models to find which is most accurate at predicitng
-              football match results and using the chosen model to simulate the 2026 World Cup. 
-            </p>
-
-          </Link>
-
+         <div className = "mb-8 space-y-4">
           <Link
             href="/projects/premier-league-usage"
-            className="group rounded-xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
-          >
-            <h3 className="mb-1 text-lg font-bold md:text-2xl">
-              Premier League Player Usage Rates
+            className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
+            >
+
+            <h3 className="mb-1 text-xl font-bold md:text-2xl">
+              Premier League Usage Rates
             </h3>
 
-            <p className="mb-3 text-xs tracking-wide text-gray-500 md:text-sm">
-              DATA ANALYSIS
+            <p className = "mb-4 text-xs tracking-wider text-gray-500 md:text-sm">
+              DATA ANALYSIS · FOOTBALL ANALYTICS
             </p>
 
-            <p className="text-sm text-gray-400 md:text-base">
-              An analysis of the Premier League during the 2025/26 season to assess how effective
-              players are given the share of the ball they recieve and their roles within their teams.
+            <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
+                <img
+                    src="/plots/projects/premier-league-usage-rates/Liverpool FC-usage-rates.png"
+                    alt="United v Spurs cumulative xG"
+                    className="rounded-xl"
+                />
+            </div>
+
+            <p className="mb-4 text-sm text-gray-400 md:text-lg">
+              An analysis of the Premier League during the 2025/26 season, exploring how effectively players use
+              their share of the ball within teams and across positional groups. Inspired by
+              usage rates in basketball, I adapted this concept for football to investigate its potential
+              applications for identifying effective creators, analysing team structures and understanding transfer decisions.
             </p>
 
           </Link>
+
+        </div>
+
+        <div className = "grid gap-6 md:gap-12 md:grid-cols-2">
   
           <Link
             href="/projects/midfielder-archetypes"
-            className="group rounded-2xl border border-white/30 p-4 md:p-8transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
           >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
               Midfielder Archetypes
@@ -131,7 +125,7 @@ export default function Home() {
 
           <Link
             href="/projects/match-report-generator"
-            className="group rounded-2xl border border-white/30 p-4 md:p-8transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
           >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
               Match Report Generator
@@ -151,8 +145,8 @@ export default function Home() {
 
       </section>
       
-      {/* Match Reports */}
-      <section id="match-reports" className="px-12 py-10">
+      {/* Latest Report */}
+      <section className = "mt-6 max-w-6xl mx-auto mb-12">
 
         <h2 className="mb-4 md:mb-8 text-2xl font-bold md:text-4xl">
           Latest Match Report 
@@ -160,25 +154,55 @@ export default function Home() {
 
         <div className = "space-y-4">
           <Link
-            href="/match-reports/tottenham-everton"
+            href="/match-reports/manutd-tottenham"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
-            <h3 className="mb-1 text-lg font-bold md:text-2xl">
-              Tottenham Hotspur 0-0 Everton
+            <h3 className="mb-1 text-xl font-bold md:text-2xl">
+              Manchester United 1-1 Tottenham Hotspur
             </h3>
 
-            <p className = "mb-3 text-xs tracking-wider text-gray-500 md:text-sm">
-              PREMIER LEAGUE | GW4 | 12.09.2026
+            <p className = "mb-4 text-xs tracking-wider text-gray-400 md:text-sm">
+              PREMIER LEAGUE | GW6 | 10.10.2026
             </p>
 
-            <p className="text-sm text-gray-400 md:text-base">
-              Spurs fail to score a goal in the opening four games of a season for the first time in history.
+            <div className = "max-w-lg mx-auto md:max-w-2xl mb-4">
+                <img
+                    src="/plots/match-reports/utd-spurs/xg.png"
+                    alt="United v Spurs cumulative xG"
+                    className="rounded-xl"
+                />
+            </div>
 
+            <p className="mb-4 text-sm text-gray-400 md:text-lg">
+              A frustrating evening for Spurs, whose wasteful finishing left them trailing 1–0 despite dominating large spells of the game. 
+              Tempers boiled over in the 78th minute as Bentancur was sent off for a headbutt. But Spurs reacted well, battling back to snatch a point in the dying minutes.
             </p>
+
+            <div className="mb-4 border-t border-white/30"></div>
+
+    
+
+            <div className="flex flex-wrap gap-2">
+              <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
+                Match Graphics
+              </span>
+
+              <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
+                The Midfield Battle
+              </span>
+
+              <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
+                High Turnovers
+              </span>
+
+              <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
+                United's Substitutions
+              </span>
+            </div>
 
           </Link>
-           
+
         </div>
 
       </section>
