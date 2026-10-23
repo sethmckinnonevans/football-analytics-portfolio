@@ -36,29 +36,30 @@ export default function MatchReports() {
 
         <div className = "space-y-4">
           <Link
-            href="/match-reports/manutd-tottenham"
+            href="/match-reports/tottenham-coventry"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              Manchester United 1-1 Tottenham Hotspur
+              Tottenham Hotspur 3-1 Coventry City
             </h3>
 
             <p className = "mb-4 text-xs tracking-wider text-gray-400 md:text-sm">
-              PREMIER LEAGUE | GW6 | 10.10.2026
+              PREMIER LEAGUE | GW7 | 19.10.2026
             </p>
 
-            <div className = "max-w-lg mx-auto md:max-w-2xl mb-4">
+            <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/match-reports/utd-spurs/xg.png"
-                    alt="United v Spurs cumulative xG"
+                    src="/plots/match-reports/spurs-coventry/tonali-xt.png"
+                    alt="Tonali xT"
                     className="rounded-xl"
                 />
             </div>
 
             <p className="mb-4 text-sm text-gray-400 md:text-lg">
-              A frustrating evening for Spurs, whose wasteful finishing left them trailing 1–0 despite dominating large spells of the game. 
-              Tempers boiled over in the 78th minute as Bentancur was sent off for a headbutt. But Spurs reacted well, battling back to snatch a point in the dying minutes.
+              Spurs jump out of the relegation zone after a 3-1 win against Coventry City. While it was not the most 
+               scintillating performance of the season, James Maddison strike in the 14th minute reminded Spurs of the quality
+               they have been missing so far this season. 
             </p>
 
             <div className="mb-4 border-t border-white/30"></div>
@@ -71,15 +72,15 @@ export default function MatchReports() {
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                The Midfield Battle
+                3-4-3 Diamond
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                High Turnovers
+                Sandro Tonali
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                United's Substitutions
+                xT
               </span>
             </div>
 
@@ -97,6 +98,23 @@ export default function MatchReports() {
         </h2>
         
         <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
+
+          {/* Man Utd v Tottenham */}
+          <Link
+            href="/match-reports/manutd-tottenham"
+            className="group rounded-xl border border-gray-500 p-4 md:p-6 transition duration-200 hover:border-white hover:bg-white/10 hover:scale-105"
+          >
+            <h2 className="mb-2 text-xl font-semibold text-white md:text-2xl">
+              Manchester United 1-1 Tottenham Hotspur
+            </h2>
+            <p className = "mb-4 text-xs text-gray-500 tracking-wider md:text-md">
+            PREMIER LEAGUE | GW6 | 10.09.2026
+            </p>
+
+            <p className="text-gray-400 text-sm md:text-lg">
+              Spurs manage to rescue a point at Old Trafford, despite going down to ten mean after Bentancur's headbut.
+            </p>
+          </Link>
 
           {/* Tottenham vs Aston Villa */}
           <Link
