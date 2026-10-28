@@ -2,7 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
-export default function SpursEverton() {
+export default function SpursVilla() {
     return (
 
         <main className="bg-gradient-to-b from-[#7678A8] via-[#40425C] to-[#272833] min-h-screen tracking-wide leading-tight px-12 py-2">

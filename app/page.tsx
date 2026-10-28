@@ -154,51 +154,49 @@ export default function Home() {
 
         <div className = "space-y-4">
           <Link
-            href="/match-reports/tottenham-coventry"
+            href="/match-reports/chelsea-tottenham"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              Tottenham Hotspur 3-1 Coventry City
+              Chelsea 0-2 Tottenham Hotspur
             </h3>
 
             <p className = "mb-4 text-xs tracking-wider text-gray-400 md:text-sm">
-              PREMIER LEAGUE | GW7 | 19.10.2026
+              PREMIER LEAGUE | GW8 | 24.10.2026
             </p>
 
             <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/match-reports/spurs-coventry/tonali-xt.png"
-                    alt="Tonali xT"
+                    src="/plots/match-reports/chelsea-spurs/tel.jpg"
+                    alt="Tel"
                     className="rounded-xl"
                 />
             </div>
 
             <p className="mb-4 text-sm text-gray-400 md:text-lg">
-              Spurs jump out of the relegation zone after a 3-1 win against Coventry City. While it was not the most 
-               scintillating performance of the season, James Maddison strike in the 14th minute reminded Spurs of the quality
-               they have been missing so far this season. 
+              Spurs win at Stamford Bridge for just the second time in the Premier League era. 
+              Mathys Tel capped off Spurs' best perfoamnce of the season so far with a fantastic 
+              solo goal.
             </p>
 
             <div className="mb-4 border-t border-white/30"></div>
 
-    
-
             <div className="flex flex-wrap gap-2">
-              <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
+              <span className="rounded-full border border-white/30 p-2 text-xzs md:text-sm text-gray-300">
                 Match Graphics
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                3-4-3 Diamond
+                Midfield Overload
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                Sandro Tonali
+                Hybrid Pressing
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                xT
+                Corners
               </span>
             </div>
 

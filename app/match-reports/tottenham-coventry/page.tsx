@@ -2,7 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
-export default function SpursEverton() {
+export default function SpursCoventry() {
     return (
 
         <main className="bg-gradient-to-b from-[#7678A8] via-[#40425C] to-[#272833] min-h-screen tracking-wide leading-tight px-12 py-2">
@@ -389,14 +389,14 @@ export default function SpursEverton() {
 
         <div className="mb-8 border-t border-white/40"></div>
 
-            <div className="mb-8 flex gap-6 justify-center">
-                <Link
-                    href="/match-reports"
-                    className="rounded-xl bg-[#3C3D5C] md:text-lg text-sm border border-gray-500 p-4 md:p-6 transition duration-200 hover:border-white hover:scale-110"
-                >
-                    Read More Match Reports
-                </Link>
-            </div>  
+        <div className="mb-8 flex gap-6 justify-center">
+            <Link
+                href="/match-reports"
+                className="rounded-xl bg-[#3C3D5C] md:text-lg text-sm border border-gray-500 p-4 md:p-6 transition duration-200 hover:border-white hover:scale-110"
+            >
+                Read More Match Reports
+            </Link>
+        </div>  
 
 
         {/* Footer */}
