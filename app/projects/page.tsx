@@ -32,21 +32,21 @@ export default function Projects() {
 
          <div className = "mb-8 space-y-4">
           <Link
-            href="/projects/premier-league-usage"
+            href="/projects/asian-transfers"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              Premier League Usage Rates
+              The Premier League's East Asian Recruitment Gap
             </h3>
 
             <p className = "mb-4 text-xs tracking-wider text-gray-500 md:text-sm">
-              DATA ANALYSIS · FOOTBALL ANALYTICS
+              DATA ANALYSIS · PLAYER RECRUITMENT
             </p>
 
             <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/projects/premier-league-usage-rates/Liverpool FC-usage-rates.png"
+                    src="/plots/projects/asian-transfers/logo.png"
                     alt="United v Spurs cumulative xG"
                     className="rounded-xl"
                 />
@@ -74,11 +74,30 @@ export default function Projects() {
         </h2> 
 
         <div className = "grid gap-6 md:gap-12 md:grid-cols-2">
+
+          <Link
+            href="/projects/premier-league-usage"
+            className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            >
+            <h3 className="mb-1 text-lg font-bold md:text-2xl">
+              Premier League Usage Rates
+            </h3>
+
+            <p className="mb-3 text-xs tracking-wide text-gray-500 md:text-sm">
+              DATA ANALYSIS · FOOTBALL ANALYSIS
+            </p>
+
+            <p className="text-sm text-gray-400 md:text-base">
+              Adapting the concept of usage rates from basketball into the context of football, to understand
+              its potential utilities in analysing the game.
+            </p>
+
+          </Link>
   
           <Link
             href="/projects/midfielder-archetypes"
             className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
-          >
+            >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
               Midfielder Archetypes
             </h3>
@@ -96,7 +115,7 @@ export default function Projects() {
           <Link
             href="/projects/match-report-generator"
             className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
-          >
+            >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
               Match Report Generator
             </h3>

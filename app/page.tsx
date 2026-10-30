@@ -72,12 +72,12 @@ export default function Home() {
 
          <div className = "mb-8 space-y-4">
           <Link
-            href="/projects/premier-league-usage"
+            href="/projects/asian-transfers"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              Premier League Usage Rates
+              The Premier League's East Asian Recruitment Gap
             </h3>
 
             <p className = "mb-4 text-xs tracking-wider text-gray-500 md:text-sm">
@@ -86,17 +86,18 @@ export default function Home() {
 
             <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/projects/premier-league-usage-rates/Liverpool FC-usage-rates.png"
+                    src="/plots/projects/asian-transfers/logo.png"
                     alt="United v Spurs cumulative xG"
                     className="rounded-xl"
                 />
             </div>
 
             <p className="mb-4 text-sm text-gray-400 md:text-lg">
-              An analysis of the Premier League during the 2025/26 season, exploring how effectively players use
-              their share of the ball within teams and across positional groups. Inspired by
-              usage rates in basketball, I adapted this concept for football to investigate its potential
-              applications for identifying effective creators, analysing team structures and understanding transfer decisions.
+              This analysis investigates whether Japanese and South Korean players are underrepresented 
+              in Premier League recruitment and whether potential undervalued talent could present 
+              opportunities for clubs. By examining historical transfer patterns and recruitment 
+              from the Japanese and Korean domestic leagues, the project also aims to 
+              identify emerging talents who could become attractive prospects Premier League clubs.
             </p>
 
           </Link>
@@ -104,11 +105,30 @@ export default function Home() {
         </div>
 
         <div className = "grid gap-6 md:gap-12 md:grid-cols-2">
+
+          <Link
+            href="/projects/premier-league-usage"
+            className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            >
+            <h3 className="mb-1 text-lg font-bold md:text-2xl">
+              Premier League Usage Rates
+            </h3>
+
+            <p className="mb-3 text-xs tracking-wide text-gray-500 md:text-sm">
+              DATA ANALYSIS · FOOTBALL ANALYTICS
+            </p>
+
+            <p className="text-sm text-gray-400 md:text-base">
+              Adapting the concept of usage rates from basketball into the context of football, to understand
+              its potential utilities in analysing the game.
+            </p>
+
+          </Link>
   
           <Link
             href="/projects/midfielder-archetypes"
             className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
-          >
+            >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
               Midfielder Archetypes
             </h3>
@@ -122,26 +142,8 @@ export default function Home() {
             </p>
 
           </Link>
-
-          <Link
-            href="/projects/match-report-generator"
-            className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
-          >
-            <h3 className="mb-1 text-lg font-bold md:text-2xl">
-              Match Report Generator
-            </h3>
-
-            <p className="mb-3 text-xs tracking-wide text-gray-500 md:text-sm">
-              DATA ANALYSIS
-            </p>
-
-            <p className="text-sm text-gray-400 md:text-base">
-              A reusable engine which generates graphics to summarise any match using 
-              Sofascore data.
-            </p>
-
-          </Link>
         </div>
+
 
       </section>
       
