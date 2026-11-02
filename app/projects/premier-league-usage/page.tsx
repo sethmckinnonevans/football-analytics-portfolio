@@ -966,7 +966,7 @@ export default function About() {
                   Visualisation
                 </td>
                 <td className="px-4 py-3 text-gray-300">
-                  Matplotlib, Plotly
+                  Matplotlib
                 </td>
               </tr>
 

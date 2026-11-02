@@ -1035,8 +1035,227 @@ export default function AsianTransfers() {
                     makes him a particularly interesting attacking prospect.
                 </p>
 
+            </section>
 
 
+            {/* Conclusion */}
+            <section className = "mt-6 max-w-6xl mx-auto mb-12">
+                <h2 className="text-xl font-bold text-white mb-4 md:text-3xl">
+                    Conclusion
+                </h2>
+            
+                <p className = "mb-4 text-sm md:text-lg">
+                    Overall, I believe it is clear that the underrepresentation of Japanese and South Korean players 
+                    in the Premier League is more complex than English clubs simply overlooking the quality 
+                    these nations have to offer. Both countries have invested heavily in footballing 
+                    infrastructure and player development, producing domestic leagues capable of 
+                    developing high-quality talent. Their progress is also reflected in their 
+                    performances on the international stage over the past decade. Yet, despite 
+                    this, relatively few players from these nations have made the move to the 
+                    English top flight. So, are they simply being overlooked?
+                </p>
+
+                <p className = "mb-4 text-sm md:text-lg">
+                    I don't believe this is necessarily the case. Although the reasons remain difficult to 
+                    establish definitively, one possible explanation is accessibility. Premier League clubs 
+                    may have less established scouting networks, fewer contacts and less comprehensive data 
+                    coverage within the J1 League and K League 1 than they do in more familiar European 
+                    markets. This could help explain why many Japanese and South Korean players move to 
+                    European leagues before eventually attracting interest from English clubs.
+                </p>
+
+                <p className = "mb-4 text-sm md:text-lg">
+                    Risk management is another factor worth considering. The players I scouted demonstrated 
+                    outstanding technical ability, reflecting the quality of player development in both countries. 
+                    However, technical ability alone does not guarantee success in the Premier League, 
+                    which is widely regarded as the most physically demanding league in the world. 
+                    Recruiting players who have already 
+                    experienced European football, where physicality and athleticism become more important,
+                    may therefore give English clubs a better opportunity to assess their suitability before 
+                    committing to a substantial transfer fee. Ultimately, 
+                    football clubs are businesses, and recruitment decisions must balance a player's 
+                    potential against the financial and sporting risks involved.
+                </p>
+
+                <p className = "mb-4 text-sm md:text-lg">
+                    Whatever the reasons behind this underrepresentation, I hope we see more Japanese and South Korean 
+                    players making the move to the Premier League in the coming years. My analysis suggests that 
+                    both nations have the infrastructure, domestic talent and international pedigree to 
+                    produce players capable of competing at the highest level. The question is whether 
+                    English clubs can identify the right opportunities and build stronger pathways for 
+                    that talent to reach the Premier League.
+                </p>
+            </section>
+
+
+            {/* Technical Stack */}
+            <section className = "max-w-6xl mx-auto mb-12">
+                <h2 className = "mb-4 text-xl text-white font-bold md:text-3xl">
+                Technical Stack
+                </h2>
+
+                <div className="overflow-x-auto rounded-xl border border-white/30 max-w-4xl mx-auto">
+                <table className="w-full text-left">
+                    <thead className="border-b border-white/30 bg-[#404040] text-sm md:text-base">
+                    <tr>
+                        <th className="px-4 py-3 font-semibold text-white">
+                        Area
+                        </th>
+                        <th className="px-4 py-3 font-semibold text-white">
+                        Tools
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody className="divide-y divide-white/30 text-xs md:text-sm">
+                    <tr>
+                        <td className="px-4 py-3 text-gray-400">
+                        Programming Language
+                        </td>
+                        <td className="px-4 py-3 text-gray-300">
+                        Python
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="px-4 py-3 text-gray-400">
+                        Data scraping
+                        </td>
+                        <td className="px-4 py-3 text-gray-300">
+                        BeautifulSoup, Playwright
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="px-4 py-3 text-gray-400">
+                        Data processing
+                        </td>
+                        <td className="px-4 py-3 text-gray-300">
+                        Pandas, NumPy
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="px-4 py-3 text-gray-400">
+                        Analysis
+                        </td>
+                        <td className="px-4 py-3 text-gray-300">
+                        SciPy, scikit-learn
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="px-4 py-3 text-gray-400">
+                        Visualisation
+                        </td>
+                        <td className="px-4 py-3 text-gray-300">
+                        Matplotlib, Plotly
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="px-4 py-3 text-gray-400">
+                        Development
+                        </td>
+                        <td className="px-4 py-3 text-gray-300">
+                        Jupyter, VS Code
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="px-4 py-3 text-gray-400">
+                        Version control
+                        </td>
+                        <td className="px-4 py-3 text-gray-300">
+                        Github
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </section>
+
+
+            {/*Github*/}
+            <div className="mb-12 flex justify-center text-sm md:text-xl">
+                <a
+                    href="https://github.com/sethmckinnonevans/premier-league-asian-transfers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-xl border border-white/30 px-6 py-3 transition duration-200 hover:border-white hover:bg-white/10 hover:scale-110"
+                >
+                    View on GitHub
+                </a>
+            </div>
+
+            <div className="mb-12 border-t border-white/30"></div>
+
+
+            {/* Other Projects */}
+            <section className="mb-12 mx-auto max-w-6xl">
+                
+                <div className="grid gap-6 md:gap-10 md:grid-cols-3">
+
+                    <div className="md:col-span-2">
+                    
+                        <h3 className="mb-4 text-2xl font-bold md:text-4xl">
+                        Featured Projects
+                        </h3>
+
+                        <div className="grid gap-6 md:gap-10 md:grid-cols-3">
+
+                        <Link
+                            href="/projects/premier-league-usage"
+                            className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+                        >
+                    
+                        <h3 className="mb-1 text-lg font-bold md:text-2xl">
+                            Usage Rates
+                        </h3>  
+                        
+                        <p className="mb-3 text-xs tracking-wide text-gray-500 md:text-sm">
+                            DATA ANALYSIS
+                        </p>
+
+                        </Link>
+
+                        <Link
+                            href="/projects/midfielder-archetypes"
+                            className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+                        >
+
+                        <h3 className="mb-1 text-lg font-bold md:text-2xl">
+                            Midfielder Archetypes
+                        </h3>
+
+                        <p className="mb-3 text-xs tracking-wider text-gray-500 md:text-sm">
+                            MACHINE LEARNING
+                        </p>
+
+                        </Link>
+
+                        </div>
+                    </div>
+                
+                    <div className="flex flex-col">
+
+                    <Link
+                        href="/projects"
+                        className="group"
+                    >
+                    <h3 className="text-2xl md:text-4xl mb-4 font-bold transition duration-200 group-hover:text-gray-300 md:text-4xl">
+                        All Projects
+                    </h3>
+
+                    <p className="text-gray-400 text-sm md:text-lg">
+                        Explore my full collection of fotball analytics projects.
+                    </p>
+
+                    </Link>
+
+                    </div>
+
+                </div>
 
             </section>
 
