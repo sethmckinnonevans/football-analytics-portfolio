@@ -156,50 +156,46 @@ export default function Home() {
 
         <div className = "space-y-4">
           <Link
-            href="/match-reports/chelsea-tottenham"
+            href="/match-reports/tottenham-crystal-palace"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              Chelsea 0-2 Tottenham Hotspur
+              Tottenham Hotspur 2-0 Crystal Palace
             </h3>
 
             <p className = "mb-4 text-xs tracking-wider text-gray-400 md:text-sm">
-              PREMIER LEAGUE | GW8 | 24.10.2026
+              PREMIER LEAGUE | GW9 | 31.10.2026
             </p>
 
             <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/match-reports/chelsea-spurs/tel.jpg"
-                    alt="Tel"
+                    src="/plots/match-reports/spurs-palace/lwb.jpeg"
+                    alt="Luca Williams-Barnett"
                     className="rounded-xl"
                 />
             </div>
 
             <p className="mb-4 text-sm text-gray-400 md:text-lg">
-              Spurs win at Stamford Bridge for just the second time in the Premier League era. 
-              Mathys Tel capped off Spurs' best perfoamnce of the season so far with a fantastic 
-              solo goal.
+              Jean-Philippe Mateta's red card in the 13th minute lead to a very one-sided contest. A controlled performance from Spurs saw goals from Archie
+              Gray and Jan Paul van Hecke, but the highlight of the match was a Premier League debut for Luca Williams-Barnett.
             </p>
 
             <div className="mb-4 border-t border-white/30"></div>
 
             <div className="flex flex-wrap gap-2">
               <span className="rounded-full border border-white/30 p-2 text-xzs md:text-sm text-gray-300">
-                Match Graphics
+                Match Graphics  
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                Midfield Overload
+                Half-Time Substitution
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                Hybrid Pressing
+                xT
               </span>
 
-              <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                Corners
-              </span>
             </div>
 
           </Link>

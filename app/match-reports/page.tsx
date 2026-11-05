@@ -36,30 +36,29 @@ export default function MatchReports() {
 
         <div className = "space-y-4">
           <Link
-            href="/match-reports/chelsea-tottenham"
+            href="/match-reports/tottenham-crystal-palace"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              Chelsea 0-2 Tottenham Hotspur
+              Tottenham Hotspur 2-0 Crystal Palace
             </h3>
 
             <p className = "mb-4 text-xs tracking-wider text-gray-400 md:text-sm">
-              PREMIER LEAGUE | GW8 | 24.10.2026
+              PREMIER LEAGUE | GW9 | 31.10.2026
             </p>
 
             <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/match-reports/chelsea-spurs/tel.jpg"
-                    alt="Tel"
+                    src="/plots/match-reports/spurs-palace/lwb.jpeg"
+                    alt="LWB"
                     className="rounded-xl"
                 />
             </div>
 
             <p className="mb-4 text-sm text-gray-400 md:text-lg">
-              Spurs win at Stamford Bridge for just the second time in the Premier League era. 
-              Mathys Tel capped off Spurs' best perfoamnce of the season so far with a fantastic 
-              solo goal.
+              Jean-Philippe Mateta's red card in the 13th minute lead to a very one-sided contest. A controlled performance from Spurs saw goals from Archie
+              Gray and Jan Paul van Hecke, but the highlight of the match was a Premier League debut for Luca Williams-Barnett.
             </p>
 
             <div className="mb-4 border-t border-white/30"></div>
@@ -98,6 +97,24 @@ export default function MatchReports() {
         </h2>
         
         <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
+
+          {/* Tottenham v Coventry*/}
+          <Link
+            href="/match-reports/chelsea-tottenham"
+            className="group rounded-xl border border-gray-500 p-4 md:p-6 transition duration-200 hover:border-white hover:bg-white/10 hover:scale-105"
+          >
+            <h2 className="mb-2 text-xl font-semibold text-white md:text-2xl">
+              Chelsea 0-2 Tottenham Hotspur
+            </h2>
+
+            <p className = "mb-4 text-xs text-gray-500 tracking-wider md:text-md">
+              PREMIER LEAGUE | GW8 | 24.10.2026
+            </p>
+
+            <p className="text-gray-400 text-sm md:text-lg">
+              Spurs win at Stamford Bridge for just the second time in the Premier League era.
+            </p>
+          </Link>
 
           {/* Tottenham v Coventry*/}
           <Link
