@@ -32,31 +32,31 @@ export default function Projects() {
 
          <div className = "mb-8 space-y-4">
           <Link
-            href="/projects/asian-transfers"
+            href="/projects/xpass"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              The Premier League's East Asian Recruitment Gap
+              Expected Pass Completion (xPass)
             </h3>
 
-            <p className = "mb-4 text-xs tracking-wider text-gray-500 md:text-sm">
-              DATA ANALYSIS · PLAYER RECRUITMENT
+            <p className = "mb-4 text-xs tracking-wider text-gray-400 md:text-sm">
+              MACHINE LEARNING · FOOTBALL ANALYTICS
             </p>
 
             <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/projects/asian-transfers/logo.png"
-                    alt="United v Spurs cumulative xG"
+                    src="/plots/projects/xpass/xpass-cover.png"
+                    alt="xPass Logo"
                     className="rounded-xl"
                 />
             </div>
 
             <p className="mb-4 text-sm text-gray-400 md:text-lg">
-              An analysis of the Premier League during the 2025/26 season, exploring how effectively players use
-              their share of the ball within teams and across positional groups. Inspired by
-              usage rates in basketball, I adapted this concept for football to investigate its potential
-              applications for identifying effective creators, analysing team structures and understanding transfer decisions.
+              How can expected pass completion (xPass) transform the way we analyse passing in football? This project 
+              uses machine learning to predict the probability of a pass being completed using historical data. It explores
+              the added detail xPass provides compared to standard pass completion metrics, and how it can be used to 
+              evaluate player performance and passing ability. 
             </p>
 
           </Link>
@@ -74,6 +74,26 @@ export default function Projects() {
         </h2> 
 
         <div className = "grid gap-6 md:gap-12 md:grid-cols-2">
+
+            <Link
+              href="/projects/asian-transfers"
+              className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
+            >
+            <h3 className="mb-1 text-lg font-bold md:text-2xl">
+              The Premier League's East Asian Recruitment Gap
+            </h3>
+
+            <p className="mb-3 text-xs tracking-wide text-gray-500 md:text-sm">
+              DATA ANALYSIS · PLAYER RECRUITMENT
+            </p>
+
+            <p className="text-sm text-gray-400 md:text-base">
+              An investigation into whether Japanese and South Korean players are underrepresented 
+              in Premier League recruitment and whether potential undervalued talent could present 
+              opportunities for clubs.
+            </p>
+
+          </Link>
 
           <Link
             href="/projects/premier-league-usage"

@@ -72,32 +72,31 @@ export default function Home() {
 
          <div className = "mb-8 space-y-4">
           <Link
-            href="/projects/asian-transfers"
+            href="/projects/xpass"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              The Premier League's East Asian Recruitment Gap
+              Expected Pass Completion (xPass)
             </h3>
 
-            <p className = "mb-4 text-xs tracking-wider text-gray-500 md:text-sm">
-              DATA ANALYSIS · FOOTBALL ANALYTICS
+            <p className = "mb-4 text-xs tracking-wider text-gray-400 md:text-sm">
+              MACHINE LEARNING · FOOTBALL ANALYTICS
             </p>
 
             <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/projects/asian-transfers/logo.png"
-                    alt="United v Spurs cumulative xG"
+                    src="/plots/projects/xpass/xpass-cover.png"
+                    alt="xPass cover"
                     className="rounded-xl"
                 />
             </div>
 
             <p className="mb-4 text-sm text-gray-400 md:text-lg">
-              This analysis investigates whether Japanese and South Korean players are underrepresented 
-              in Premier League recruitment and whether potential undervalued talent could present 
-              opportunities for clubs. By examining historical transfer patterns and recruitment 
-              from the Japanese and Korean domestic leagues, the project also aims to 
-              identify emerging talents who could become attractive prospects Premier League clubs.
+              How can expected pass completion (xPass) transform the way we analyse passing in football? This project 
+              uses machine learning to predict the probability of a pass being completed using historical data. It explores
+              the added detail xPass provides compared to standard pass completion metrics, and how it can be used to 
+              evaluate player performance and passing ability. 
             </p>
 
           </Link>
@@ -126,19 +125,21 @@ export default function Home() {
           </Link>
   
           <Link
-            href="/projects/midfielder-archetypes"
+            href="/projects/asian-transfers"
             className="group rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:scale-105 hover:border-white hover:bg-white/10"
             >
             <h3 className="mb-1 text-lg font-bold md:text-2xl">
-              Midfielder Archetypes
+              The Premier League's East Asian Recruitment Gap
             </h3>
 
             <p className="mb-3 text-xs tracking-wide text-gray-500 md:text-sm">
-              UNSUPERVISED LEARNING · PLAYER PROFILING
+              DATA ANALYSIS · PLAYER RECRUITMENT
             </p>
 
             <p className="text-sm text-gray-400 md:text-base">
-              An unsupervised learning project that uses performance metrics and clustering techniques to identify modern midfield player archetypes beyond traditional positional labels.
+              An investigation into whether Japanese and South Korean players are underrepresented 
+              in Premier League recruitment and whether potential undervalued talent could present 
+              opportunities for clubs.            
             </p>
 
           </Link>
