@@ -35,6 +35,13 @@ export default function Home() {
             </Link>
 
             <Link 
+              href="/gallery" 
+              className="transition duration-200 hover:scale-110 hover:text-gray-300"
+            >
+              Gallery
+            </Link>
+
+            <Link 
               href="/contact" 
               className="transition duration-200 hover:scale-110 hover:text-gray-300"
             >
