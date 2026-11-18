@@ -36,29 +36,31 @@ export default function MatchReports() {
 
         <div className = "space-y-4">
           <Link
-            href="/match-reports/tottenham-crystal-palace"
+            href="/match-reports/leeds-tottenham"
             className="group block rounded-2xl border border-white/30 p-4 md:p-8 transition duration-200 hover:border-white hover:scale-105 hover:bg-white/10"
             >
 
             <h3 className="mb-1 text-xl font-bold md:text-2xl">
-              Tottenham Hotspur 2-0 Crystal Palace
+              Leeds United 1-0 Tottenham Hotspur
             </h3>
 
             <p className = "mb-4 text-xs tracking-wider text-gray-400 md:text-sm">
-              PREMIER LEAGUE | GW9 | 31.10.2026
+              PREMIER LEAGUE | GW10 | 07.11.2026
             </p>
 
             <div className = "max-w-lg mx-auto md:max-w-4xl mb-4">
                 <img
-                    src="/plots/match-reports/spurs-palace/lwb.jpeg"
-                    alt="LWB"
+                    src="/plots/match-reports/leeds-spurs/front-three.jpg"
+                    alt="Leeds front three"
                     className="rounded-xl"
                 />
             </div>
 
             <p className="mb-4 text-sm text-gray-400 md:text-lg">
-              Jean-Philippe Mateta's red card in the 13th minute lead to a very one-sided contest. A controlled performance from Spurs saw goals from Archie
-              Gray and Jan Paul van Hecke, but the highlight of the match was a Premier League debut for Luca Williams-Barnett.
+              Spurs' winning streak came to an abrupt end at Elland Road as they were thoroughly disrupted 
+              by an aggressive Leeds press. Despite dominating possession, De Zerbi's side struggled to 
+              create meaningful chances, producing just 0.72 xG - a disappointing performance to 
+              contemplate over the international break.
             </p>
 
             <div className="mb-4 border-t border-white/30"></div>
@@ -71,16 +73,13 @@ export default function MatchReports() {
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                Midfield Overload
+                Leed's Press
               </span>
 
               <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                Hybrid Pressing
+                Spurs' Build-up
               </span>
 
-              <span className="rounded-full border border-white/30 p-2 text-xs md:text-sm text-gray-300">
-                Corners
-              </span>
             </div>
 
           </Link>
@@ -98,7 +97,26 @@ export default function MatchReports() {
         
         <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
 
-          {/* Tottenham v Coventry*/}
+          {/* Tottenham v Crystal Palace */}
+          <Link
+            href="/match-reports/tottenham-crystal-palace"
+            className="group rounded-xl border border-gray-500 p-4 md:p-6 transition duration-200 hover:border-white hover:bg-white/10 hover:scale-105"
+          >
+            <h2 className="mb-2 text-xl font-semibold text-white md:text-2xl">
+              Tottenham Hotspur 2-0 Crystal Palace
+            </h2>
+
+            <p className = "mb-4 text-xs text-gray-500 tracking-wider md:text-md">
+              PREMIER LEAGUE | GW9 | 31.10.2026
+            </p>
+
+            <p className="text-gray-400 text-sm md:text-lg">
+              Spurs beat 10-man Crystal Palace in a dominant display which saw a Premier League debut for 
+              Luca Williams-Barnett.
+            </p>
+          </Link>
+
+          {/* Chelsea v Tottenham */}
           <Link
             href="/match-reports/chelsea-tottenham"
             className="group rounded-xl border border-gray-500 p-4 md:p-6 transition duration-200 hover:border-white hover:bg-white/10 hover:scale-105"
