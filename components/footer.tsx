@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-white/20 px-6 py-4 md:py-8 backdrop-blur-xl">
-      
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:gap-8 md:flex-row">
+    <footer className="px-6 py-4 md:py-8 backdrop-blur-xl">
+
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-[var(--border)] pt-6 md:gap-8 md:flex-row">
 
         {/* Name */}
         <div className="text-center md:text-left">
@@ -10,18 +10,18 @@ export default function Footer() {
             Seth McKinnon Evans
           </p>
 
-          <p className="mt-1 text-xs text-gray-400 md:text-sm">
-            Football Analytics • Data Science • Machine Learning
+          <p className="mt-1 text-xs text-accent md:text-sm">
+            Football Analytics | Data Science | Machine Learning
           </p>
         </div>
 
         {/* Links */}
-        <div className="flex items-center gap-4 md:gap-6 text-xs md:text-sm text-gray-400">
+        <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-muted md:gap-6 md:text-sm">
           <a
             href="https://github.com/sethmckinnonevans"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-200 hover:text-white hover:scale-105"
+            className="transition-colors duration-200 hover:text-accent"
           >
             GitHub
           </a>
@@ -30,23 +30,23 @@ export default function Footer() {
             href="https://www.linkedin.com/in/sethmckinnonevans/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-200 hover:text-white hover:scale-105"
+            className="transition-colors duration-200 hover:text-accent"
           >
             LinkedIn
           </a>
 
           <a
             href="mailto:sethmckinnonevans02@gmail.com"
-            className="transition duration-200 hover:text-white hover:scale-105"
+            className="transition-colors duration-200 hover:text-accent"
           >
-            sethmckinnonevans02@gmail.com
+            Email
           </a>
         </div>
 
       </div>
 
       {/* Copyright */}
-      <div className="mx-auto mt-4 md:mt-6 max-w-6xl border-t border-white/20 pt-4 text-center text-[6pt] md:text-sx text-gray-500">
+      <div className="mx-auto mt-4 max-w-6xl border-t border-[var(--border)] pt-4 text-center text-[10px] text-muted md:mt-6 md:text-xs">
         © 2026 Seth McKinnon Evans
       </div>
 

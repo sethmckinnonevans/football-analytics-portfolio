@@ -2,55 +2,46 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xl flex items-center mb-10 py-6 justify-between border-b border-white/50">
+    <nav className="sticky top-0 z-50 mb-4 px-6 backdrop-blur-xl">
 
-      <Link
-        href="/"
-        className="transition duration-200 hover:scale-110"
-      >
-        <img
-          src="/logo/exxg-initial-nobg.png"
-          alt="ExpectedxG home"
-          className="w-12 md:w-16 h-auto"
-        />
-      </Link>
+      <div className="mx-auto flex max-w-6xl items-center justify-between border-b border-[var(--border)] py-4 md:py-6">
 
-      <div className="flex gap-2 md:gap-8 text-xs text-white md:text-sm">
-
+        {/* Logo */}
         <Link
-          href="/about"
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
+          href="/"
+          className="transition-transform duration-200 hover:scale-105"
         >
-          About
+          <img
+            src="/logo/exxg-initial-nobg.png"
+            alt="ExpectedxG home"
+            className="h-auto w-12 md:w-16"
+          />
         </Link>
 
-        <Link
-          href="/projects"
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-        >
-          Projects
-        </Link>
+        {/* Links */}
+        <div className="flex flex-wrap justify-end gap-x-3 gap-y-2 text-xs text-muted md:gap-x-8 md:text-sm">
 
-        <Link
-          href="/match-reports"
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-        >
-          Match Reports
-        </Link>
+          <Link href="/about" className="transition-colors duration-200 hover:text-accent">
+            About
+          </Link>
 
-        <Link
-          href="/gallery"
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-        >
-          Gallery
-        </Link>
+          <Link href="/projects" className="transition-colors duration-200 hover:text-accent">
+            Projects
+          </Link>
 
-        <Link
-          href="/contact"
-          className="transition duration-200 hover:scale-110 hover:text-gray-300"
-        >
-          Contact
-        </Link>
+          <Link href="/match-reports" className="transition-colors duration-200 hover:text-accent">
+            Match Reports
+          </Link>
+
+          <Link href="/interactive" className="transition-colors duration-200 hover:text-accent">
+            Interactive
+          </Link>
+
+          <Link href="/contact" className="transition-colors duration-200 hover:text-accent">
+            Contact
+          </Link>
+
+        </div>
 
       </div>
     </nav>
