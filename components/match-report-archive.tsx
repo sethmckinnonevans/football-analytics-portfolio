@@ -6,6 +6,13 @@ import { useState } from "react";
 
 const reports = [
   {
+    title: "Leeds United 1-0 Tottenham Hotspur",
+    href: "/match-reports/leeds-tottenham",
+    metadata: "PREMIER LEAGUE | GW10 | 07.10.2026",
+    description:
+      "Spurs' winning streak comes to an abrupt end at Elland Road, where an aggressive Leeds press disrupted De Zerbi's side throughout",
+  },
+  {
     title: "Tottenham Hotspur 2-0 Crystal Palace",
     href: "/match-reports/tottenham-crystal-palace",
     metadata: "PREMIER LEAGUE | GW9 | 31.10.2026",

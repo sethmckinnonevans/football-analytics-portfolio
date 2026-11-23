@@ -25,7 +25,7 @@ export default function MatchReportFigures({
             <iframe
               src={`${basePath}/${homeTeam}_average_positions.html`}
               title={`${homeTeam} average positions`}
-              className="h-[380px] w-full rounded-lg border border-[var(--border)]"
+              className="h-[380px] w-full rounded-lg border-0 bg-transparent"
             />
           </div>
 
@@ -33,7 +33,7 @@ export default function MatchReportFigures({
             <iframe
               src={`${basePath}/${awayTeam}_average_positions.html`}
               title={`${awayTeam} average positions`}
-              className="h-[380px] w-full rounded-lg border border-[var(--border)]"
+              className="h-[380px] w-full rounded-lg border-0"
             />
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function MatchReportFigures({
             <iframe
               src={`${basePath}/${homeTeam}_shot_map.html`}
               title={`${homeTeam} shot map`}
-              className="h-[380px] w-full rounded-lg border border-[var(--border)]"
+              className="h-[380px] w-full rounded-lg border-0"
             />
           </div>
 
@@ -83,7 +83,7 @@ export default function MatchReportFigures({
             <iframe
               src={`${basePath}/${awayTeam}_shot_map.html`}
               title={`${awayTeam} shot map`}
-              className="h-[380px] w-full rounded-lg border border-[var(--border)]"
+              className="h-[380px] w-full rounded-lg border-0"
             />
           </div>
         </div>

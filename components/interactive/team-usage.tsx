@@ -15,6 +15,10 @@ type Player = {
     attackingInvolvement: number;
     GA: number;
     xGI: number;
+    avg_xPass: number | null;
+    attempted_passes: number | null;
+    passing_acc: number | null;
+    PAx_per_100: number | null;
     primary_colour: string | null;
 };
 
@@ -33,6 +37,10 @@ export default function TeamUsage() {
 
     const [playerSearch, setPlayerSearch] = useState("");
     const [addedPlayers, setAddedPlayers] = useState<Player[]>([]);
+
+    const [yAxisMetric, setYAxisMetric] = useState<
+    "attackingInvolvement" | "avg_xPass"
+    >("attackingInvolvement");
 
     // Load player data
     useEffect(() => {
@@ -131,6 +139,7 @@ export default function TeamUsage() {
            
             const maxValue = Math.ceil(
                 Math.max(
+                    0,
                     ...plotPlayers.map((player) =>
                         Math.max(
                             player.usageRate * 100,
@@ -140,7 +149,7 @@ export default function TeamUsage() {
                 )
             );
 
-            const data: any[] = plotPlayers.length > 0
+            const referenceLine = yAxisMetric === "attackingInvolvement"
                 ? [
                     {
                         type: "scatter",
@@ -154,12 +163,64 @@ export default function TeamUsage() {
                         },
                         hoverinfo: "skip",
                         showlegend: false,
+                        font: {
+                            family: "DIN Alternate",
+                            color: "#CCCCCC",
+                        },
                     },
+                ]
+                : [];
+            
+            const teamXPassValues = teamPlayers
+                .map((player) => player.avg_xPass)
+                .filter((value): value is number =>
+                    value !== null && Number.isFinite(value)
+                )
+                .sort((a, b) => a - b);
+
+            const middle = Math.floor(teamXPassValues.length / 2);
+
+            const teamMedianAvgXPass =
+                teamXPassValues.length === 0
+                    ? null
+                    : teamXPassValues.length % 2 === 0
+                        ? (teamXPassValues[middle - 1] + teamXPassValues[middle]) / 2
+                        : teamXPassValues[middle];
+
+            const data: any[] = plotPlayers.length > 0
+                ? [
+                    ...referenceLine,
+
+                    ...(yAxisMetric === "avg_xPass" && teamMedianAvgXPass !== null
+                        ? [
+                            {
+                                type: "scatter",
+                                mode: "lines",
+                                x: [0, maxValue],
+                                y: [teamMedianAvgXPass, teamMedianAvgXPass],
+                                line: {
+                                    color: "#888888",
+                                    width: 1.5,
+                                    dash: "dash",
+                                },
+                                hoverinfo: "skip",
+                                showlegend: false,
+                            },
+                        ]
+                        : []),
                     {
                         type: "scatter",
                         mode: "markers",
-                        x: plotPlayers.map((player) => player.usageRate * 100),
-                        y: plotPlayers.map((player) => player.attackingInvolvement * 100),
+
+                        x: plotPlayers.map(
+                            (player) => player.usageRate * 100
+                        ),
+
+                        y: plotPlayers.map((player) =>
+                            yAxisMetric === "attackingInvolvement"
+                                ? player.attackingInvolvement * 100
+                                : player.avg_xPass
+                        ),
 
                         customdata: plotPlayers.map((player) => [
                             player.playerName,
@@ -228,9 +289,12 @@ export default function TeamUsage() {
 
                 yaxis: {
                     title: {
-                        text: "Attacking Involvement (%)",
+                        text: yAxisMetric === "attackingInvolvement"
+                            ? "Attacking Involvement (%)"
+                            : "Average xPass",
                         font: { color: "#CCCCCC", size: 13 },
                     },
+                    tickformat: yAxisMetric === "avg_xPass" ? ".2f" : undefined,
                     color: "#CCCCCC",
                     gridcolor: "rgba(204,204,204,0.10)",
                     zeroline: false,
@@ -297,7 +361,7 @@ export default function TeamUsage() {
 
     
         renderPlot();
-    }, [selectedTeam, plotPlayers, isMobile, selectedPlayer]);
+    }, [selectedTeam, plotPlayers, isMobile, selectedPlayer, yAxisMetric]);
 
     // Clean up Plotly instance
     useEffect(() => {
@@ -464,44 +528,123 @@ export default function TeamUsage() {
 
                     <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
 
-                        <div>
-                            <p className="text-xs text-muted">Usage rate</p>
-                            <p className="mt-1 text-lg font-semibold text-foreground">
-                                {(selectedPlayer.usageRate * 100).toFixed(2)}%
-                            </p>
-                        </div>
+                        {yAxisMetric === "avg_xPass" ? (
+                            <>
+                                <div>
+                                    <p className="text-xs text-muted">Usage rate</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {(selectedPlayer.usageRate * 100).toFixed(2)}%
+                                    </p>
+                                </div>
 
-                        <div>
-                            <p className="text-xs text-muted">Attacking involvement</p>
-                            <p className="mt-1 text-lg font-semibold text-foreground">
-                                {(selectedPlayer.attackingInvolvement * 100).toFixed(2)}%
-                            </p>
-                        </div>
+                                <div>
+                                    <p className="text-xs text-muted">Average xPass</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {selectedPlayer.avg_xPass != null
+                                            ? selectedPlayer.avg_xPass.toFixed(3)
+                                            : "—"}
+                                    </p>
+                                </div>
 
-                        <div>
-                            <p className="text-xs text-muted">G+A</p>
-                            <p className="mt-1 text-lg font-semibold text-foreground">
-                                {selectedPlayer.GA}
-                            </p>
-                        </div>
+                                <div>
+                                    <p className="text-xs text-muted">Passes attempted</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {selectedPlayer.attempted_passes?.toLocaleString() ?? "—"}
+                                    </p>
+                                </div>
 
-                        <div>
-                            <p className="text-xs text-muted">xGI</p>
-                            <p className="mt-1 text-lg font-semibold text-foreground">
-                                {selectedPlayer.xGI.toFixed(2)}
-                            </p>
-                        </div>
+                                <div>
+                                    <p className="text-xs text-muted">Passing accuracy</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {selectedPlayer.passing_acc != null
+                                            ? `${selectedPlayer.passing_acc.toFixed(2)}%`
+                                            : "—"}
+                                    </p>
+                                </div>
 
-                        <div>
-                            <p className="text-xs text-muted">SCA/90</p>
-                            <p className="mt-1 text-lg font-semibold text-foreground">
-                                {selectedPlayer["SCA/90"].toFixed(2)}
-                            </p>
-                        </div>
+                                <div>
+                                    <p className="text-xs text-muted">PAx per 100</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {selectedPlayer.PAx_per_100 != null
+                                            ? selectedPlayer.PAx_per_100.toFixed(2)
+                                            : "—"}
+                                    </p>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <div>
+                                    <p className="text-xs text-muted">Usage rate</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {(selectedPlayer.usageRate * 100).toFixed(2)}%
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p className="text-xs text-muted">Attacking involvement</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {(selectedPlayer.attackingInvolvement * 100).toFixed(2)}%
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p className="text-xs text-muted">G+A</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {selectedPlayer.GA}
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p className="text-xs text-muted">xGI</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {selectedPlayer.xGI.toFixed(2)}
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p className="text-xs text-muted">SCA/90</p>
+                                    <p className="mt-1 text-lg font-semibold text-foreground">
+                                        {selectedPlayer["SCA/90"].toFixed(2)}
+                                    </p>
+                                </div>
+                            </>
+                        )}
 
                     </div>
                 </div>
             )}
+
+
+            {/* Y-axis selection */}
+            <div className="mb-4 flex flex-wrap items-center gap-2">
+
+                <p className="mr-2 text-xs font-medium tracking-[0.2em] text-accent">
+                    Y-AXIS
+                </p>
+
+                <button
+                    onClick={() => setYAxisMetric("attackingInvolvement")}
+                    className={`rounded-lg border px-4 py-2 text-xs font-medium transition sm:text-sm ${
+                        yAxisMetric === "attackingInvolvement"
+                            ? "border-accent bg-accent/10 text-accent"
+                            : "border-[var(--border)] text-muted hover:bg-background hover:text-foreground"
+                    }`}
+                >
+                    Attacking Involvement
+                </button>
+
+                <button
+                    onClick={() => setYAxisMetric("avg_xPass")}
+                    className={`rounded-lg border px-4 py-2 text-xs font-medium transition sm:text-sm ${
+                        yAxisMetric === "avg_xPass"
+                            ? "border-accent bg-accent/10 text-accent"
+                            : "border-[var(--border)] text-muted hover:bg-background hover:text-foreground"
+                    }`}
+                >
+                    Average xPass
+                </button>
+
+            </div>
 
 
             {/* Scatter plot */}

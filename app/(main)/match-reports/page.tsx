@@ -42,37 +42,37 @@ export default function MatchReports() {
         </div>
 
         <Link
-          href="/match-reports/leeds-tottenham"
+          href="/match-reports/tottenham-ipswich"
           className="group block rounded-xl border border-[var(--border)] bg-surface/50 p-5 transition-colors duration-300 hover:border-accent/60 md:p-8"
         >
 
           <div className="mb-5">
             <h3 className="mb-2 text-2xl font-bold md:text-3xl">
-              Leeds United 1-0 Tottenham Hotspur
+              Tottenham Hotspur 2-0 Ipswich Town
             </h3>
 
             <p className="text-xs font-medium tracking-[0.2em] text-accent md:text-sm">
-              PREMIER LEAGUE | GW10 | 07.11.2026
+              PREMIER LEAGUE | GAMEWEEK 11 | 21 November 2026
             </p>
           </div>
 
           <div className="mb-6 overflow-hidden rounded-lg">
             <img
-              src="/plots/match-reports/leeds-spurs/front-three.jpg"
+              src="/plots/match-reports/spurs-ipswich/lwb.jpg"
               alt="Leeds front three"
               className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
             />
           </div>
 
           <p className="mb-6 text-sm leading-relaxed text-muted md:text-base">
-            Spurs' winning streak came to an abrupt end at Elland Road as they were thoroughly disrupted 
-            by an aggressive Leeds press. Despite dominating possession, De Zerbi's side struggled to 
-            create meaningful chances, producing just 0.72 xG.
+            Luca Williams-Barnett steals the show as Spurs cruise to victory at the Tottenham Hotspur Stadium.
+            With a goal and assist on his first senior start, Williams-Barnett becomes Spurs' third youngest Premier League 
+            goal scorer and second youngest player in Premier Legaue histroy to both score and assist in a single game.
           </p>
 
           <div className="border-t border-[var(--border)] pt-5">
             <div className="flex flex-wrap gap-2">
-              {["Match Graphics", "Leeds' Press", "Spurs' Build-up"].map((tag) => (
+              {["Match Graphics", "Ipswich's Shape", "Exploiting Wide Areas", "Mateus Fernandes' Role"].map((tag) => (
                 <span
                   key={tag}
                   className="rounded-full border border-[var(--border)] px-3 py-2 text-xs text-muted md:text-sm"

@@ -12,7 +12,7 @@ export default function Navbar() {
           className="transition-transform duration-200 hover:scale-105"
         >
           <img
-            src="/logo/exxg-initial-nobg.png"
+            src="/logo/exxg-green.png"
             alt="ExpectedxG home"
             className="h-auto w-12 md:w-16"
           />

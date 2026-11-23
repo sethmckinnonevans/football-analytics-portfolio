@@ -39,7 +39,7 @@ export default function Home() {
       {/* Hero */}
       <section className="flex min-h-[35vh] md:min-h-[55vh] flex-col justify-center items-center mx-auto py-8 md:py-16 text-center">
         <img
-          src="/logo/exxg-full-nobg.png"
+          src="/logo/exxg-full-green.png"
           alt="ExpectedxG logo"
           className="w-full max-w-2xl h-auto mb-6"
         />
@@ -157,36 +157,36 @@ export default function Home() {
 
         <div className = "space-y-4">
           <Link
-            href="/match-reports/leeds-tottenham"
+            href="/match-reports/tottenham-ipswich"
             className="group block rounded-xl border border-[var(--border)] bg-surface/50 p-5 md:p-8 transition-colors duration-300 hover:border-accent/60"            >
 
             <div className="mb-5">
               <h3 className="mb-2 text-2xl font-bold md:text-3xl">
-                Leeds United 1-0 Tottenham Hotspur
+                Tottenham Hotspur 2-0 Ipswich Town
               </h3>
 
               <p className="mt-2 text-xs tracking-[0.2em] text-accent md:text-sm">
-                PREMIER LEAGUE | GAMEWEEK 10 | 7 NOVEMBER 2026
+                PREMIER LEAGUE | GAMEWEEK 11 | 21 NOVEMBER 2026
               </p>
             </div>
 
             <div className="mb-6 overflow-hidden rounded-lg">
                 <img
-                    src="/plots/match-reports/leeds-spurs/front-three.jpg"
+                    src="/plots/match-reports/spurs-ipswich/lwb.jpg"
                     alt="Leeds' press"
                     className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 />
             </div>
 
-            <p className="mb-6 max-w-4xl text-sm leading-relaxed text-muted md:text-base">
-              Spurs' winning streak came to an abrupt end at Elland Road, where an aggressive 
-              Leeds press disrupted De Zerbi's side throughout. Despite dominating possession, 
-              Tottenham struggled to create meaningful chances, finishing with just 0.72 xG.
+            <p className="mb-6 text-sm leading-relaxed text-muted md:text-base">
+              Luca Williams-Barnett steals the show as Spurs cruise to victory at the Tottenham Hotspur Stadium.
+              With a goal and assist on his first senior start, Williams-Barnett becomes Spurs' third youngest Premier League 
+              goal scorer and second youngest player in Premier Legaue histroy to both score and assist in a single game.
             </p>
 
             <div className="border-t border-[var(--border)] pt-5">
               <div className="flex flex-wrap gap-2">
-                {["Match Graphics", "Leeds' Press", "Spurs' Build-up"].map((tag) => (
+                {["Match Graphics", "Ipswich's Shape", "Exploiting Wide Areas", "Mateus Fernandes' Role"].map((tag) => (
                   <span
                     key={tag}
                     className="rounded-full border border-[var(--border)] px-3 py-2 text-xs text-muted md:text-sm"
