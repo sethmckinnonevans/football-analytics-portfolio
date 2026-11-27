@@ -149,6 +149,25 @@ export default function Projects() {
             </p>
           </Link>
 
+          {/* World Cup Simulation */}
+          <Link
+            href="/projects/world-cup-simulation"
+            className="group block rounded-xl border border-[var(--border)] bg-surface/50 p-5 transition-colors duration-300 hover:border-accent/60 md:p-7"
+          >
+            <h3 className="mb-2 text-xl font-bold md:text-2xl">
+              Predicting the 2026 World Cup
+            </h3>
+
+            <p className="mb-3 text-xs font-medium tracking-[0.2em] text-accent">
+              STATISTICAL MODELLING | MONTE CARLO SIMULATION
+            </p>
+
+            <p className="text-sm leading-relaxed text-muted md:text-base">
+              Using a weighted Dixon-Coles model and Monte Carlo framework to predict
+              the outcome of the 2026 World Cup.
+            </p>
+          </Link>
+
           {/* Match Report Generator */}
           <Link
             href="/projects/match-report-generator"

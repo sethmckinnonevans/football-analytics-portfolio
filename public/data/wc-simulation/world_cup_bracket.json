@@ -1,0 +1,482 @@
+{
+    "tournament": "2026 World Cup",
+    "simulation_count_per_match": 10000,
+    "rounds": {
+        "round_of_32": [
+            {
+                "team_a": "Germany",
+                "team_b": "United States",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.6037877024206937,
+                "draw_90": 0.22487145324758057,
+                "team_b_win_90": 0.17134084433172553,
+                "team_a_progression": 0.7438,
+                "team_b_progression": 0.2562,
+                "predicted_winner": "Germany",
+                "match_id": "R32-1"
+            },
+            {
+                "team_a": "France",
+                "team_b": "Sweden",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.5777354937585439,
+                "draw_90": 0.25724861715447206,
+                "team_b_win_90": 0.165015889086984,
+                "team_a_progression": 0.7364,
+                "team_b_progression": 0.2636,
+                "predicted_winner": "France",
+                "match_id": "R32-2"
+            },
+            {
+                "team_a": "Czech Republic",
+                "team_b": "Canada",
+                "most_likely_score": [
+                    1,
+                    1
+                ],
+                "team_a_win_90": 0.415641995921153,
+                "draw_90": 0.2931193907846314,
+                "team_b_win_90": 0.2912386132942156,
+                "team_a_progression": 0.5689,
+                "team_b_progression": 0.4311,
+                "predicted_winner": "Czech Republic",
+                "match_id": "R32-3"
+            },
+            {
+                "team_a": "Netherlands",
+                "team_b": "Morocco",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.4585176696532439,
+                "draw_90": 0.30638213230193556,
+                "team_b_win_90": 0.23510019804482069,
+                "team_a_progression": 0.6282,
+                "team_b_progression": 0.3718,
+                "predicted_winner": "Netherlands",
+                "match_id": "R32-4"
+            },
+            {
+                "team_a": "Colombia",
+                "team_b": "Croatia",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.4269254586159182,
+                "draw_90": 0.3090499678212011,
+                "team_b_win_90": 0.26402457356288056,
+                "team_a_progression": 0.5859,
+                "team_b_progression": 0.4141,
+                "predicted_winner": "Colombia",
+                "match_id": "R32-5"
+            },
+            {
+                "team_a": "Spain",
+                "team_b": "Austria",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.6550692426343654,
+                "draw_90": 0.22268887248588395,
+                "team_b_win_90": 0.12224188487975063,
+                "team_a_progression": 0.7939,
+                "team_b_progression": 0.2061,
+                "predicted_winner": "Spain",
+                "match_id": "R32-6"
+            },
+            {
+                "team_a": "Turkey",
+                "team_b": "Bosnia and Herzegovina",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.49698311182531957,
+                "draw_90": 0.27081278269231357,
+                "team_b_win_90": 0.2322041054823671,
+                "team_a_progression": 0.6451,
+                "team_b_progression": 0.3549,
+                "predicted_winner": "Turkey",
+                "match_id": "R32-7"
+            },
+            {
+                "team_a": "Belgium",
+                "team_b": "Algeria",
+                "most_likely_score": [
+                    1,
+                    1
+                ],
+                "team_a_win_90": 0.5452378542870087,
+                "draw_90": 0.24305404655376872,
+                "team_b_win_90": 0.21170809915922284,
+                "team_a_progression": 0.6851,
+                "team_b_progression": 0.3149,
+                "predicted_winner": "Belgium",
+                "match_id": "R32-8"
+            },
+            {
+                "team_a": "Brazil",
+                "team_b": "Japan",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.6268766530082683,
+                "draw_90": 0.24307525563042687,
+                "team_b_win_90": 0.1300480913613048,
+                "team_a_progression": 0.7814,
+                "team_b_progression": 0.2186,
+                "predicted_winner": "Brazil",
+                "match_id": "R32-9"
+            },
+            {
+                "team_a": "Ecuador",
+                "team_b": "Norway",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.41596900759714606,
+                "draw_90": 0.3001631468761472,
+                "team_b_win_90": 0.28386784552670663,
+                "team_a_progression": 0.5707,
+                "team_b_progression": 0.4293,
+                "predicted_winner": "Ecuador",
+                "match_id": "R32-10"
+            },
+            {
+                "team_a": "Mexico",
+                "team_b": "Scotland",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.4471493904194641,
+                "draw_90": 0.3066590419317796,
+                "team_b_win_90": 0.24619156764875613,
+                "team_a_progression": 0.6174,
+                "team_b_progression": 0.3826,
+                "predicted_winner": "Mexico",
+                "match_id": "R32-11"
+            },
+            {
+                "team_a": "England",
+                "team_b": "Senegal",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.6188772397346203,
+                "draw_90": 0.24973811216822472,
+                "team_b_win_90": 0.13138464809715503,
+                "team_a_progression": 0.7747,
+                "team_b_progression": 0.2253,
+                "predicted_winner": "England",
+                "match_id": "R32-12"
+            },
+            {
+                "team_a": "Argentina",
+                "team_b": "Uruguay",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.5411788327212805,
+                "draw_90": 0.26178713733645453,
+                "team_b_win_90": 0.19703402994226474,
+                "team_a_progression": 0.6859,
+                "team_b_progression": 0.3141,
+                "predicted_winner": "Argentina",
+                "match_id": "R32-13"
+            },
+            {
+                "team_a": "Paraguay",
+                "team_b": "Iran",
+                "most_likely_score": [
+                    0,
+                    0
+                ],
+                "team_a_win_90": 0.31852171920472916,
+                "draw_90": 0.336768489740273,
+                "team_b_win_90": 0.34470979105499777,
+                "team_a_progression": 0.4936,
+                "team_b_progression": 0.5064,
+                "predicted_winner": "Iran",
+                "match_id": "R32-14"
+            },
+            {
+                "team_a": "Switzerland",
+                "team_b": "Egypt",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.4385049287631114,
+                "draw_90": 0.3038669810076744,
+                "team_b_win_90": 0.25762809022921407,
+                "team_a_progression": 0.6077,
+                "team_b_progression": 0.3923,
+                "predicted_winner": "Switzerland",
+                "match_id": "R32-15"
+            },
+            {
+                "team_a": "Portugal",
+                "team_b": "Ivory Coast",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.591820329115051,
+                "draw_90": 0.246779782287694,
+                "team_b_win_90": 0.16139988859725496,
+                "team_a_progression": 0.7475,
+                "team_b_progression": 0.2525,
+                "predicted_winner": "Portugal",
+                "match_id": "R32-16"
+            }
+        ],
+        "round_of_16": [
+            {
+                "team_a": "Germany",
+                "team_b": "France",
+                "most_likely_score": [
+                    1,
+                    1
+                ],
+                "team_a_win_90": 0.30214955026832374,
+                "draw_90": 0.2638645317252935,
+                "team_b_win_90": 0.4339859180063828,
+                "team_a_progression": 0.4245,
+                "team_b_progression": 0.5755,
+                "predicted_winner": "France",
+                "match_id": "R16-1"
+            },
+            {
+                "team_a": "Czech Republic",
+                "team_b": "Netherlands",
+                "most_likely_score": [
+                    0,
+                    1
+                ],
+                "team_a_win_90": 0.17460958581105862,
+                "draw_90": 0.24269634315456257,
+                "team_b_win_90": 0.5826940710343789,
+                "team_a_progression": 0.2723,
+                "team_b_progression": 0.7277,
+                "predicted_winner": "Netherlands",
+                "match_id": "R16-2"
+            },
+            {
+                "team_a": "Colombia",
+                "team_b": "Spain",
+                "most_likely_score": [
+                    0,
+                    1
+                ],
+                "team_a_win_90": 0.22681974088991036,
+                "draw_90": 0.3110244822942113,
+                "team_b_win_90": 0.4621557768158783,
+                "team_a_progression": 0.3671,
+                "team_b_progression": 0.6329,
+                "predicted_winner": "Spain",
+                "match_id": "R16-3"
+            },
+            {
+                "team_a": "Turkey",
+                "team_b": "Belgium",
+                "most_likely_score": [
+                    1,
+                    1
+                ],
+                "team_a_win_90": 0.25446157467285146,
+                "draw_90": 0.25759498200803155,
+                "team_b_win_90": 0.4879434433191169,
+                "team_a_progression": 0.3681,
+                "team_b_progression": 0.6319,
+                "predicted_winner": "Belgium",
+                "match_id": "R16-4"
+            },
+            {
+                "team_a": "Brazil",
+                "team_b": "Ecuador",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.6046799552709162,
+                "draw_90": 0.24888475944258445,
+                "team_b_win_90": 0.1464352852864993,
+                "team_a_progression": 0.754,
+                "team_b_progression": 0.246,
+                "predicted_winner": "Brazil",
+                "match_id": "R16-5"
+            },
+            {
+                "team_a": "Mexico",
+                "team_b": "England",
+                "most_likely_score": [
+                    0,
+                    1
+                ],
+                "team_a_win_90": 0.18450856494650175,
+                "draw_90": 0.27628061143509325,
+                "team_b_win_90": 0.5392108236184051,
+                "team_a_progression": 0.2961,
+                "team_b_progression": 0.7039,
+                "predicted_winner": "England",
+                "match_id": "R16-6"
+            },
+            {
+                "team_a": "Argentina",
+                "team_b": "Iran",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.6495007335532569,
+                "draw_90": 0.23405686356659744,
+                "team_b_win_90": 0.11644240288014575,
+                "team_a_progression": 0.8004,
+                "team_b_progression": 0.1996,
+                "predicted_winner": "Argentina",
+                "match_id": "R16-7"
+            },
+            {
+                "team_a": "Switzerland",
+                "team_b": "Portugal",
+                "most_likely_score": [
+                    0,
+                    1
+                ],
+                "team_a_win_90": 0.22573406759390763,
+                "draw_90": 0.27477609428040967,
+                "team_b_win_90": 0.4994898381256828,
+                "team_a_progression": 0.3462,
+                "team_b_progression": 0.6538,
+                "predicted_winner": "Portugal",
+                "match_id": "R16-8"
+            }
+        ],
+        "quarter_finals": [
+            {
+                "team_a": "France",
+                "team_b": "Netherlands",
+                "most_likely_score": [
+                    1,
+                    1
+                ],
+                "team_a_win_90": 0.3892409419289078,
+                "draw_90": 0.28802503715540145,
+                "team_b_win_90": 0.3227340209156907,
+                "team_a_progression": 0.5404,
+                "team_b_progression": 0.4596,
+                "predicted_winner": "France",
+                "match_id": "QF-1"
+            },
+            {
+                "team_a": "Spain",
+                "team_b": "Belgium",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.5337004719739805,
+                "draw_90": 0.2571431631062491,
+                "team_b_win_90": 0.20915636491977035,
+                "team_a_progression": 0.6849,
+                "team_b_progression": 0.3151,
+                "predicted_winner": "Spain",
+                "match_id": "QF-2"
+            },
+            {
+                "team_a": "Brazil",
+                "team_b": "England",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.42102533977065165,
+                "draw_90": 0.3138261196033822,
+                "team_b_win_90": 0.2651485406259662,
+                "team_a_progression": 0.5888,
+                "team_b_progression": 0.4112,
+                "predicted_winner": "Brazil",
+                "match_id": "QF-3"
+            },
+            {
+                "team_a": "Argentina",
+                "team_b": "Portugal",
+                "most_likely_score": [
+                    1,
+                    0
+                ],
+                "team_a_win_90": 0.45691528374882917,
+                "draw_90": 0.2864309187060113,
+                "team_b_win_90": 0.25665379754515966,
+                "team_a_progression": 0.6122,
+                "team_b_progression": 0.3878,
+                "predicted_winner": "Argentina",
+                "match_id": "QF-4"
+            }
+        ],
+        "semi_finals": [
+            {
+                "team_a": "France",
+                "team_b": "Spain",
+                "most_likely_score": [
+                    0,
+                    1
+                ],
+                "team_a_win_90": 0.27624434492059347,
+                "draw_90": 0.29661954185048484,
+                "team_b_win_90": 0.42713611322892175,
+                "team_a_progression": 0.4114,
+                "team_b_progression": 0.5886,
+                "predicted_winner": "Spain",
+                "match_id": "SF-1"
+            },
+            {
+                "team_a": "Brazil",
+                "team_b": "Argentina",
+                "most_likely_score": [
+                    1,
+                    1
+                ],
+                "team_a_win_90": 0.37594367467929773,
+                "draw_90": 0.30821442441557684,
+                "team_b_win_90": 0.31584190090512543,
+                "team_a_progression": 0.5312,
+                "team_b_progression": 0.4688,
+                "predicted_winner": "Brazil",
+                "match_id": "SF-2"
+            }
+        ],
+        "final": [
+            {
+                "team_a": "Spain",
+                "team_b": "Brazil",
+                "most_likely_score": [
+                    0,
+                    1
+                ],
+                "team_a_win_90": 0.3173117165988378,
+                "draw_90": 0.3140497437684892,
+                "team_b_win_90": 0.36863853963267323,
+                "team_a_progression": 0.4623,
+                "team_b_progression": 0.5377,
+                "predicted_winner": "Brazil",
+                "match_id": "F-1"
+            }
+        ]
+    },
+    "champion": "Brazil"
+}

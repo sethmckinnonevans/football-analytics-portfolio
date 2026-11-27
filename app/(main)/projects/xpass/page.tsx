@@ -583,9 +583,9 @@ export default function XPass() {
                     of both their passing tendencies and execution.
                 </p>
 
-                <h3 className="mb-4 mt-8 text-lg font-bold md:text-2xl">
-                    Tracking Changes in Performance
-                </h3>
+                    <h3 className="mb-4 mt-8 text-lg font-bold md:text-2xl">
+                        Tracking Changes in Performance
+                    </h3>
 
                 <p className="mb-4 text-sm leading-relaxed md:text-lg">
                     While tracking passing accuracy across multiple seasons can indicate how a player's passing 
